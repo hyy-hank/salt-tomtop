@@ -1,0 +1,3722 @@
+es-node3-172-31-38-199:
+----------
+          ID: common_packages
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed.
+     Started: 10:17:54.585406
+    Duration: 386.749 ms
+     Changes:   
+----------
+          ID: /etc/security/limits.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/security/limits.conf is in the correct state
+     Started: 10:17:54.973901
+    Duration: 6.882 ms
+     Changes:   
+----------
+          ID: kernel.msgmnb
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.msgmnb = 65536 is already set
+     Started: 10:17:54.981088
+    Duration: 23.085 ms
+     Changes:   
+----------
+          ID: kernel.msgmax
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.msgmax = 65536 is already set
+     Started: 10:17:55.004291
+    Duration: 21.096 ms
+     Changes:   
+----------
+          ID: kernel.shmmax
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.shmmax = 68719476736 is already set
+     Started: 10:17:55.025503
+    Duration: 21.297 ms
+     Changes:   
+----------
+          ID: kernel.shmall
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.shmall = 4294967296 is already set
+     Started: 10:17:55.046917
+    Duration: 21.191 ms
+     Changes:   
+----------
+          ID: kernel.sysrq
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.sysrq = 0 is already set
+     Started: 10:17:55.068224
+    Duration: 21.13 ms
+     Changes:   
+----------
+          ID: kernel.core_uses_pid
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.core_uses_pid = 1 is already set
+     Started: 10:17:55.089471
+    Duration: 21.04 ms
+     Changes:   
+----------
+          ID: vm.overcommit_memory
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value vm.overcommit_memory = 1 is already set
+     Started: 10:17:55.110627
+    Duration: 20.991 ms
+     Changes:   
+----------
+          ID: net.ipv4.ip_forward
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.ip_forward = 0 is already set
+     Started: 10:17:55.131735
+    Duration: 21.009 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.default.rp_filter
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.default.rp_filter = 1 is already set
+     Started: 10:17:55.152862
+    Duration: 21.288 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.default.accept_source_route
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.default.accept_source_route = 0 is already set
+     Started: 10:17:55.174268
+    Duration: 21.183 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_syncookies
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_syncookies = 1 is already set
+     Started: 10:17:55.195567
+    Duration: 21.245 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_synack_retries
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_synack_retries = 2 is already set
+     Started: 10:17:55.216929
+    Duration: 21.297 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_tw_reuse
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_tw_reuse = 1 is already set
+     Started: 10:17:55.238343
+    Duration: 21.183 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_tw_recycle
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_tw_recycle = 1 is already set
+     Started: 10:17:55.259643
+    Duration: 21.008 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_fin_timeout
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_fin_timeout = 30 is already set
+     Started: 10:17:55.280769
+    Duration: 21.185 ms
+     Changes:   
+----------
+          ID: net.core.somaxconn
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.core.somaxconn = 8192 is already set
+     Started: 10:17:55.302077
+    Duration: 21.07 ms
+     Changes:   
+----------
+          ID: net.ipv4.ip_local_port_range
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.ip_local_port_range = 1024 65535 is already set
+     Started: 10:17:55.323265
+    Duration: 21.224 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: pkg.installed
+        Name: ntp
+      Result: True
+     Comment: Package ntp is already installed.
+     Started: 10:17:55.344606
+    Duration: 0.438 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: service.running
+        Name: ntpd
+      Result: True
+     Comment: The service ntpd is already running
+     Started: 10:17:55.345688
+    Duration: 119.483 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: cmd.run
+        Name: systemctl enable ntpd
+      Result: True
+     Comment: Command "systemctl enable ntpd" run
+     Started: 10:17:55.466041
+    Duration: 28.825 ms
+     Changes:   
+              ----------
+              pid:
+                  26893
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: /etc/profile
+    Function: file.append
+      Result: True
+     Comment: File /etc/profile is in correct state
+     Started: 10:17:55.495016
+    Duration: 1.463 ms
+     Changes:   
+
+Summary
+-------------
+Succeeded: 23 (changed=1)
+Failed:     0
+-------------
+Total states run:     23
+es-node1-172-31-38-197:
+----------
+          ID: common_packages
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed.
+     Started: 10:17:54.568182
+    Duration: 400.333 ms
+     Changes:   
+----------
+          ID: /etc/security/limits.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/security/limits.conf is in the correct state
+     Started: 10:17:54.970332
+    Duration: 3.198 ms
+     Changes:   
+----------
+          ID: kernel.msgmnb
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.msgmnb = 65536 is already set
+     Started: 10:17:54.973819
+    Duration: 23.187 ms
+     Changes:   
+----------
+          ID: kernel.msgmax
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.msgmax = 65536 is already set
+     Started: 10:17:54.997140
+    Duration: 20.941 ms
+     Changes:   
+----------
+          ID: kernel.shmmax
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.shmmax = 68719476736 is already set
+     Started: 10:17:55.018220
+    Duration: 21.037 ms
+     Changes:   
+----------
+          ID: kernel.shmall
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.shmall = 4294967296 is already set
+     Started: 10:17:55.039377
+    Duration: 21.551 ms
+     Changes:   
+----------
+          ID: kernel.sysrq
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.sysrq = 0 is already set
+     Started: 10:17:55.061048
+    Duration: 21.712 ms
+     Changes:   
+----------
+          ID: kernel.core_uses_pid
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.core_uses_pid = 1 is already set
+     Started: 10:17:55.082912
+    Duration: 22.694 ms
+     Changes:   
+----------
+          ID: vm.overcommit_memory
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value vm.overcommit_memory = 1 is already set
+     Started: 10:17:55.105734
+    Duration: 21.223 ms
+     Changes:   
+----------
+          ID: net.ipv4.ip_forward
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.ip_forward = 0 is already set
+     Started: 10:17:55.127079
+    Duration: 21.31 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.default.rp_filter
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.default.rp_filter = 1 is already set
+     Started: 10:17:55.148509
+    Duration: 20.826 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.default.accept_source_route
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.default.accept_source_route = 0 is already set
+     Started: 10:17:55.169456
+    Duration: 21.686 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_syncookies
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_syncookies = 1 is already set
+     Started: 10:17:55.191264
+    Duration: 21.047 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_synack_retries
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_synack_retries = 2 is already set
+     Started: 10:17:55.212431
+    Duration: 20.92 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_tw_reuse
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_tw_reuse = 1 is already set
+     Started: 10:17:55.233477
+    Duration: 22.954 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_tw_recycle
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_tw_recycle = 1 is already set
+     Started: 10:17:55.256567
+    Duration: 21.679 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_fin_timeout
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_fin_timeout = 30 is already set
+     Started: 10:17:55.278383
+    Duration: 23.434 ms
+     Changes:   
+----------
+          ID: net.core.somaxconn
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.core.somaxconn = 8192 is already set
+     Started: 10:17:55.301968
+    Duration: 22.405 ms
+     Changes:   
+----------
+          ID: net.ipv4.ip_local_port_range
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.ip_local_port_range = 1024 65535 is already set
+     Started: 10:17:55.324510
+    Duration: 22.308 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: pkg.installed
+        Name: ntp
+      Result: True
+     Comment: Package ntp is already installed.
+     Started: 10:17:55.346968
+    Duration: 0.477 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: service.running
+        Name: ntpd
+      Result: True
+     Comment: The service ntpd is already running
+     Started: 10:17:55.348160
+    Duration: 122.294 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: cmd.run
+        Name: systemctl enable ntpd
+      Result: True
+     Comment: Command "systemctl enable ntpd" run
+     Started: 10:17:55.471354
+    Duration: 28.369 ms
+     Changes:   
+              ----------
+              pid:
+                  26936
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: /etc/profile
+    Function: file.append
+      Result: True
+     Comment: File /etc/profile is in correct state
+     Started: 10:17:55.499878
+    Duration: 1.591 ms
+     Changes:   
+
+Summary
+-------------
+Succeeded: 23 (changed=1)
+Failed:     0
+-------------
+Total states run:     23
+es-node2-172-31-38-198:
+----------
+          ID: common_packages
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed.
+     Started: 10:17:54.583396
+    Duration: 389.569 ms
+     Changes:   
+----------
+          ID: /etc/security/limits.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/security/limits.conf is in the correct state
+     Started: 10:17:54.974743
+    Duration: 7.895 ms
+     Changes:   
+----------
+          ID: kernel.msgmnb
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.msgmnb = 65536 is already set
+     Started: 10:17:54.982930
+    Duration: 23.692 ms
+     Changes:   
+----------
+          ID: kernel.msgmax
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.msgmax = 65536 is already set
+     Started: 10:17:55.006738
+    Duration: 21.841 ms
+     Changes:   
+----------
+          ID: kernel.shmmax
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.shmmax = 68719476736 is already set
+     Started: 10:17:55.028694
+    Duration: 21.392 ms
+     Changes:   
+----------
+          ID: kernel.shmall
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.shmall = 4294967296 is already set
+     Started: 10:17:55.050203
+    Duration: 21.257 ms
+     Changes:   
+----------
+          ID: kernel.sysrq
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.sysrq = 0 is already set
+     Started: 10:17:55.071575
+    Duration: 21.321 ms
+     Changes:   
+----------
+          ID: kernel.core_uses_pid
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.core_uses_pid = 1 is already set
+     Started: 10:17:55.093014
+    Duration: 21.432 ms
+     Changes:   
+----------
+          ID: vm.overcommit_memory
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value vm.overcommit_memory = 1 is already set
+     Started: 10:17:55.114561
+    Duration: 21.429 ms
+     Changes:   
+----------
+          ID: net.ipv4.ip_forward
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.ip_forward = 0 is already set
+     Started: 10:17:55.136124
+    Duration: 21.397 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.default.rp_filter
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.default.rp_filter = 1 is already set
+     Started: 10:17:55.157638
+    Duration: 21.279 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.default.accept_source_route
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.default.accept_source_route = 0 is already set
+     Started: 10:17:55.179048
+    Duration: 21.285 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_syncookies
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_syncookies = 1 is already set
+     Started: 10:17:55.200449
+    Duration: 21.139 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_synack_retries
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_synack_retries = 2 is already set
+     Started: 10:17:55.221706
+    Duration: 21.177 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_tw_reuse
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_tw_reuse = 1 is already set
+     Started: 10:17:55.243000
+    Duration: 21.241 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_tw_recycle
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_tw_recycle = 1 is already set
+     Started: 10:17:55.264359
+    Duration: 21.723 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_fin_timeout
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_fin_timeout = 30 is already set
+     Started: 10:17:55.286201
+    Duration: 21.411 ms
+     Changes:   
+----------
+          ID: net.core.somaxconn
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.core.somaxconn = 8192 is already set
+     Started: 10:17:55.307729
+    Duration: 21.494 ms
+     Changes:   
+----------
+          ID: net.ipv4.ip_local_port_range
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.ip_local_port_range = 1024 65535 is already set
+     Started: 10:17:55.329344
+    Duration: 21.451 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: pkg.installed
+        Name: ntp
+      Result: True
+     Comment: Package ntp is already installed.
+     Started: 10:17:55.350912
+    Duration: 0.442 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: service.running
+        Name: ntpd
+      Result: True
+     Comment: The service ntpd is already running
+     Started: 10:17:55.352015
+    Duration: 120.323 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: cmd.run
+        Name: systemctl enable ntpd
+      Result: True
+     Comment: Command "systemctl enable ntpd" run
+     Started: 10:17:55.473196
+    Duration: 27.322 ms
+     Changes:   
+              ----------
+              pid:
+                  26878
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: /etc/profile
+    Function: file.append
+      Result: True
+     Comment: File /etc/profile is in correct state
+     Started: 10:17:55.500655
+    Duration: 1.499 ms
+     Changes:   
+
+Summary
+-------------
+Succeeded: 23 (changed=1)
+Failed:     0
+-------------
+Total states run:     23
+redis-mq-172-31-39-214:
+----------
+          ID: common_packages
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed.
+     Started: 10:17:54.613960
+    Duration: 453.183 ms
+     Changes:   
+----------
+          ID: /etc/security/limits.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/security/limits.conf is in the correct state
+     Started: 10:17:55.068990
+    Duration: 3.034 ms
+     Changes:   
+----------
+          ID: kernel.msgmnb
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.msgmnb = 65536 is already set
+     Started: 10:17:55.072337
+    Duration: 25.403 ms
+     Changes:   
+----------
+          ID: kernel.msgmax
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.msgmax = 65536 is already set
+     Started: 10:17:55.097906
+    Duration: 25.262 ms
+     Changes:   
+----------
+          ID: kernel.shmmax
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.shmmax = 68719476736 is already set
+     Started: 10:17:55.123319
+    Duration: 25.372 ms
+     Changes:   
+----------
+          ID: kernel.shmall
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.shmall = 4294967296 is already set
+     Started: 10:17:55.148866
+    Duration: 24.856 ms
+     Changes:   
+----------
+          ID: kernel.sysrq
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.sysrq = 0 is already set
+     Started: 10:17:55.173910
+    Duration: 25.354 ms
+     Changes:   
+----------
+          ID: kernel.core_uses_pid
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.core_uses_pid = 1 is already set
+     Started: 10:17:55.199414
+    Duration: 24.968 ms
+     Changes:   
+----------
+          ID: vm.overcommit_memory
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value vm.overcommit_memory = 1 is already set
+     Started: 10:17:55.224531
+    Duration: 25.091 ms
+     Changes:   
+----------
+          ID: net.ipv4.ip_forward
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.ip_forward = 0 is already set
+     Started: 10:17:55.249786
+    Duration: 25.135 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.default.rp_filter
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.default.rp_filter = 1 is already set
+     Started: 10:17:55.275074
+    Duration: 25.361 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.default.accept_source_route
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.default.accept_source_route = 0 is already set
+     Started: 10:17:55.300588
+    Duration: 25.124 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_syncookies
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_syncookies = 1 is already set
+     Started: 10:17:55.325897
+    Duration: 25.272 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_synack_retries
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_synack_retries = 2 is already set
+     Started: 10:17:55.351324
+    Duration: 25.871 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_tw_reuse
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_tw_reuse = 1 is already set
+     Started: 10:17:55.377344
+    Duration: 24.879 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_tw_recycle
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_tw_recycle = 1 is already set
+     Started: 10:17:55.402376
+    Duration: 25.19 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_fin_timeout
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_fin_timeout = 30 is already set
+     Started: 10:17:55.427720
+    Duration: 25.4 ms
+     Changes:   
+----------
+          ID: net.core.somaxconn
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.core.somaxconn = 8192 is already set
+     Started: 10:17:55.453270
+    Duration: 24.92 ms
+     Changes:   
+----------
+          ID: net.ipv4.ip_local_port_range
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.ip_local_port_range = 1024 65535 is already set
+     Started: 10:17:55.478344
+    Duration: 25.552 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: pkg.installed
+        Name: ntp
+      Result: True
+     Comment: Package ntp is already installed.
+     Started: 10:17:55.504049
+    Duration: 0.459 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: service.running
+        Name: ntpd
+      Result: True
+     Comment: The service ntpd is already running
+     Started: 10:17:55.505226
+    Duration: 141.941 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: cmd.run
+        Name: systemctl enable ntpd
+      Result: True
+     Comment: Command "systemctl enable ntpd" run
+     Started: 10:17:55.648153
+    Duration: 31.981 ms
+     Changes:   
+              ----------
+              pid:
+                  11558
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: /etc/profile
+    Function: file.append
+      Result: True
+     Comment: File /etc/profile is in correct state
+     Started: 10:17:55.680352
+    Duration: 1.8 ms
+     Changes:   
+
+Summary
+-------------
+Succeeded: 23 (changed=1)
+Failed:     0
+-------------
+Total states run:     23
+uat-lb-172-31-28-195:
+----------
+          ID: common_packages
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed.
+     Started: 10:17:54.685264
+    Duration: 373.941 ms
+     Changes:   
+----------
+          ID: /etc/security/limits.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/security/limits.conf is in the correct state
+     Started: 10:17:55.061042
+    Duration: 2.2 ms
+     Changes:   
+----------
+          ID: kernel.msgmnb
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.msgmnb = 65536 is already set
+     Started: 10:17:55.063538
+    Duration: 23.595 ms
+     Changes:   
+----------
+          ID: kernel.msgmax
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.msgmax = 65536 is already set
+     Started: 10:17:55.087302
+    Duration: 22.247 ms
+     Changes:   
+----------
+          ID: kernel.shmmax
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.shmmax = 68719476736 is already set
+     Started: 10:17:55.109673
+    Duration: 21.277 ms
+     Changes:   
+----------
+          ID: kernel.shmall
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.shmall = 4294967296 is already set
+     Started: 10:17:55.131081
+    Duration: 21.231 ms
+     Changes:   
+----------
+          ID: kernel.sysrq
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.sysrq = 0 is already set
+     Started: 10:17:55.152432
+    Duration: 21.036 ms
+     Changes:   
+----------
+          ID: kernel.core_uses_pid
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.core_uses_pid = 1 is already set
+     Started: 10:17:55.173587
+    Duration: 21.345 ms
+     Changes:   
+----------
+          ID: vm.overcommit_memory
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value vm.overcommit_memory = 1 is already set
+     Started: 10:17:55.195056
+    Duration: 21.007 ms
+     Changes:   
+----------
+          ID: net.ipv4.ip_forward
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.ip_forward = 0 is already set
+     Started: 10:17:55.216184
+    Duration: 20.858 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.default.rp_filter
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.default.rp_filter = 1 is already set
+     Started: 10:17:55.237165
+    Duration: 21.266 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.default.accept_source_route
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.default.accept_source_route = 0 is already set
+     Started: 10:17:55.258556
+    Duration: 21.097 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_syncookies
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_syncookies = 1 is already set
+     Started: 10:17:55.279773
+    Duration: 20.963 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_synack_retries
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_synack_retries = 2 is already set
+     Started: 10:17:55.300860
+    Duration: 20.713 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_tw_reuse
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_tw_reuse = 1 is already set
+     Started: 10:17:55.321701
+    Duration: 21.302 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_tw_recycle
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_tw_recycle = 1 is already set
+     Started: 10:17:55.343126
+    Duration: 21.034 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_fin_timeout
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_fin_timeout = 30 is already set
+     Started: 10:17:55.364282
+    Duration: 20.997 ms
+     Changes:   
+----------
+          ID: net.core.somaxconn
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.core.somaxconn = 8192 is already set
+     Started: 10:17:55.385403
+    Duration: 21.806 ms
+     Changes:   
+----------
+          ID: net.ipv4.ip_local_port_range
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.ip_local_port_range = 1024 65535 is already set
+     Started: 10:17:55.407332
+    Duration: 21.295 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: pkg.installed
+        Name: ntp
+      Result: True
+     Comment: Package ntp is already installed.
+     Started: 10:17:55.428751
+    Duration: 0.442 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: service.running
+        Name: ntpd
+      Result: True
+     Comment: The service ntpd is already running
+     Started: 10:17:55.430052
+    Duration: 156.3 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: cmd.run
+        Name: systemctl enable ntpd
+      Result: True
+     Comment: Command "systemctl enable ntpd" run
+     Started: 10:17:55.587529
+    Duration: 44.241 ms
+     Changes:   
+              ----------
+              pid:
+                  5558
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: /etc/profile
+    Function: file.append
+      Result: True
+     Comment: File /etc/profile is in correct state
+     Started: 10:17:55.631933
+    Duration: 1.564 ms
+     Changes:   
+----------
+          ID: www_user
+    Function: user.present
+        Name: www
+      Result: True
+     Comment: User www is present and up to date
+     Started: 10:17:55.634197
+    Duration: 0.903 ms
+     Changes:   
+----------
+          ID: nginx_pkg
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed.
+     Started: 10:17:55.635176
+    Duration: 0.388 ms
+     Changes:   
+----------
+          ID: nginx_source
+    Function: file.managed
+        Name: /usr/local/src/nginx-1.8.1.tar.gz
+      Result: True
+     Comment: File /usr/local/src/nginx-1.8.1.tar.gz is in the correct state
+     Started: 10:17:55.635635
+    Duration: 5.607 ms
+     Changes:   
+----------
+          ID: nginx_source
+    Function: cmd.run
+        Name: tar -xzf nginx-1.8.1.tar.gz
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:55.641757
+    Duration: 4.911 ms
+     Changes:   
+----------
+          ID: nginx_compile
+    Function: cmd.run
+        Name: ./configure --user=www --group=www --prefix=/usr/local/nginx --with-pcre --with-http_stub_status_module --with-http_ssl_module && make && make install
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:55.646797
+    Duration: 4.394 ms
+     Changes:   
+----------
+          ID: nginx_service
+    Function: file.managed
+        Name: /usr/lib/systemd/system/nginx.service
+      Result: True
+     Comment: File /usr/lib/systemd/system/nginx.service is in the correct state
+     Started: 10:17:55.651317
+    Duration: 2.091 ms
+     Changes:   
+----------
+          ID: nginx_lb_conf
+    Function: file.managed
+        Name: /usr/local/nginx/conf/nginx.conf
+      Result: True
+     Comment: File /usr/local/nginx/conf/nginx.conf is in the correct state
+     Started: 10:17:55.665357
+    Duration: 2.042 ms
+     Changes:   
+----------
+          ID: /usr/local/nginx/conf/vhost/advert.api.tomtop.com.conf
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/nginx/conf/vhost/advert.api.tomtop.com.conf is in the correct state
+     Started: 10:17:55.667478
+    Duration: 7.25 ms
+     Changes:   
+----------
+          ID: /usr/local/nginx/conf/vhost/producer.api.tomtop.com.conf
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/nginx/conf/vhost/producer.api.tomtop.com.conf is in the correct state
+     Started: 10:17:55.674809
+    Duration: 8.562 ms
+     Changes:   
+----------
+          ID: /usr/local/nginx/conf/vhost/cart.tomtop.com.conf
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/nginx/conf/vhost/cart.tomtop.com.conf is in the correct state
+     Started: 10:17:55.683453
+    Duration: 6.662 ms
+     Changes:   
+----------
+          ID: /usr/local/nginx/conf/vhost/ipn.api.tomtop.com.conf
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/nginx/conf/vhost/ipn.api.tomtop.com.conf is in the correct state
+     Started: 10:17:55.690198
+    Duration: 19.179 ms
+     Changes:   
+----------
+          ID: /usr/local/nginx/conf/vhost/logistics.api.tomtop.com.conf
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/nginx/conf/vhost/logistics.api.tomtop.com.conf is in the correct state
+     Started: 10:17:55.709459
+    Duration: 83.958 ms
+     Changes:   
+----------
+          ID: /usr/local/nginx/conf/vhost/base.api.tomtop.com.conf
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/nginx/conf/vhost/base.api.tomtop.com.conf is in the correct state
+     Started: 10:17:55.793501
+    Duration: 5.933 ms
+     Changes:   
+----------
+          ID: /usr/local/nginx/conf/vhost/bos.tomtop-cdn.com.conf
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/nginx/conf/vhost/bos.tomtop-cdn.com.conf is in the correct state
+     Started: 10:17:55.799516
+    Duration: 5.749 ms
+     Changes:   
+----------
+          ID: /usr/local/nginx/conf/vhost/www.chicuu.com.conf
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/nginx/conf/vhost/www.chicuu.com.conf is in the correct state
+     Started: 10:17:55.805347
+    Duration: 5.916 ms
+     Changes:   
+----------
+          ID: /usr/local/nginx/conf/vhost/loyalty.api.tomtop.com.conf
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/nginx/conf/vhost/loyalty.api.tomtop.com.conf is in the correct state
+     Started: 10:17:55.811366
+    Duration: 5.635 ms
+     Changes:   
+----------
+          ID: /usr/local/nginx/conf/vhost/search.api.tomtop.com.conf
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/nginx/conf/vhost/search.api.tomtop.com.conf is in the correct state
+     Started: 10:17:55.817083
+    Duration: 7.602 ms
+     Changes:   
+----------
+          ID: /usr/local/nginx/conf/vhost/consumer.api.tomtop.com.conf
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/nginx/conf/vhost/consumer.api.tomtop.com.conf is in the correct state
+     Started: 10:17:55.824766
+    Duration: 5.741 ms
+     Changes:   
+----------
+          ID: /usr/local/nginx/conf/vhost/member.api.tomtop.com.conf
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/nginx/conf/vhost/member.api.tomtop.com.conf is in the correct state
+     Started: 10:17:55.830588
+    Duration: 5.699 ms
+     Changes:   
+----------
+          ID: /usr/local/nginx/conf/vhost/img.api.tomtop.com.conf
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/nginx/conf/vhost/img.api.tomtop.com.conf is in the correct state
+     Started: 10:17:55.836369
+    Duration: 5.688 ms
+     Changes:   
+----------
+          ID: /usr/local/nginx/conf/vhost/product.api.tomtop.com.conf
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/nginx/conf/vhost/product.api.tomtop.com.conf is in the correct state
+     Started: 10:17:55.842139
+    Duration: 5.651 ms
+     Changes:   
+----------
+          ID: /usr/local/nginx/conf/vhost/static.chicuu.com.conf
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/nginx/conf/vhost/static.chicuu.com.conf is in the correct state
+     Started: 10:17:55.847872
+    Duration: 4.076 ms
+     Changes:   
+----------
+          ID: /usr/local/nginx/conf/vhost/static.tomtop-cdn.com.conf
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/nginx/conf/vhost/static.tomtop-cdn.com.conf is in the correct state
+     Started: 10:17:55.852032
+    Duration: 4.062 ms
+     Changes:   
+----------
+          ID: /usr/local/nginx/conf/vhost/www.tomtop.com.conf
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/nginx/conf/vhost/www.tomtop.com.conf is in the correct state
+     Started: 10:17:55.856217
+    Duration: 5.688 ms
+     Changes:   
+----------
+          ID: nginx_service
+    Function: service.running
+        Name: nginx
+      Result: True
+     Comment: Service nginx is already enabled, and is in the desired state
+     Started: 10:17:55.865414
+    Duration: 241.486 ms
+     Changes:   
+----------
+          ID: nginx_service
+    Function: cmd.run
+        Name: systemctl enable nginx
+      Result: True
+     Comment: Command "systemctl enable nginx" run
+     Started: 10:17:56.107080
+    Duration: 37.273 ms
+     Changes:   
+              ----------
+              pid:
+                  5594
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: nginx_logs_directory
+    Function: file.directory
+        Name: /data/logs/nginx
+      Result: True
+     Comment: Directory /data/logs/nginx is in the correct state
+     Started: 10:17:56.144498
+    Duration: 0.868 ms
+     Changes:   
+----------
+          ID: nginx_vhost_directory
+    Function: file.directory
+        Name: /usr/local/nginx/conf/vhost
+      Result: True
+     Comment: Directory /usr/local/nginx/conf/vhost is in the correct state
+     Started: 10:17:56.145448
+    Duration: 0.654 ms
+     Changes:   
+
+Summary
+-------------
+Succeeded: 51 (changed=2)
+Failed:     0
+-------------
+Total states run:     51
+uat-api-172-31-47-226:
+----------
+          ID: common_packages
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed.
+     Started: 10:17:54.702092
+    Duration: 388.359 ms
+     Changes:   
+----------
+          ID: /etc/security/limits.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/security/limits.conf is in the correct state
+     Started: 10:17:55.092205
+    Duration: 2.934 ms
+     Changes:   
+----------
+          ID: kernel.msgmnb
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.msgmnb = 65536 is already set
+     Started: 10:17:55.095430
+    Duration: 23.969 ms
+     Changes:   
+----------
+          ID: kernel.msgmax
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.msgmax = 65536 is already set
+     Started: 10:17:55.119519
+    Duration: 22.158 ms
+     Changes:   
+----------
+          ID: kernel.shmmax
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.shmmax = 68719476736 is already set
+     Started: 10:17:55.141815
+    Duration: 22.636 ms
+     Changes:   
+----------
+          ID: kernel.shmall
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.shmall = 4294967296 is already set
+     Started: 10:17:55.164571
+    Duration: 22.471 ms
+     Changes:   
+----------
+          ID: kernel.sysrq
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.sysrq = 0 is already set
+     Started: 10:17:55.187165
+    Duration: 22.078 ms
+     Changes:   
+----------
+          ID: kernel.core_uses_pid
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.core_uses_pid = 1 is already set
+     Started: 10:17:55.209364
+    Duration: 22.164 ms
+     Changes:   
+----------
+          ID: vm.overcommit_memory
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value vm.overcommit_memory = 1 is already set
+     Started: 10:17:55.231647
+    Duration: 21.962 ms
+     Changes:   
+----------
+          ID: net.ipv4.ip_forward
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.ip_forward = 0 is already set
+     Started: 10:17:55.253744
+    Duration: 22.462 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.default.rp_filter
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.default.rp_filter = 1 is already set
+     Started: 10:17:55.276327
+    Duration: 22.065 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.default.accept_source_route
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.default.accept_source_route = 0 is already set
+     Started: 10:17:55.298513
+    Duration: 22.143 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_syncookies
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_syncookies = 1 is already set
+     Started: 10:17:55.320814
+    Duration: 22.039 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_synack_retries
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_synack_retries = 2 is already set
+     Started: 10:17:55.342977
+    Duration: 22.044 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_tw_reuse
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_tw_reuse = 1 is already set
+     Started: 10:17:55.365148
+    Duration: 22.357 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_tw_recycle
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_tw_recycle = 1 is already set
+     Started: 10:17:55.387628
+    Duration: 22.627 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_fin_timeout
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_fin_timeout = 30 is already set
+     Started: 10:17:55.410386
+    Duration: 22.216 ms
+     Changes:   
+----------
+          ID: net.core.somaxconn
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.core.somaxconn = 8192 is already set
+     Started: 10:17:55.432741
+    Duration: 22.158 ms
+     Changes:   
+----------
+          ID: net.ipv4.ip_local_port_range
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.ip_local_port_range = 1024 65535 is already set
+     Started: 10:17:55.455024
+    Duration: 22.3 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: pkg.installed
+        Name: ntp
+      Result: True
+     Comment: Package ntp is already installed.
+     Started: 10:17:55.477448
+    Duration: 0.446 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: service.running
+        Name: ntpd
+      Result: True
+     Comment: The service ntpd is already running
+     Started: 10:17:55.478937
+    Duration: 149.553 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: cmd.run
+        Name: systemctl enable ntpd
+      Result: True
+     Comment: Command "systemctl enable ntpd" run
+     Started: 10:17:55.629361
+    Duration: 37.291 ms
+     Changes:   
+              ----------
+              pid:
+                  29281
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: /etc/profile
+    Function: file.append
+      Result: True
+     Comment: File /etc/profile is in correct state
+     Started: 10:17:55.666808
+    Duration: 1.582 ms
+     Changes:   
+----------
+          ID: tomcat_source
+    Function: pkg.installed
+        Name: java-1.8.0-openjdk
+      Result: True
+     Comment: Package java-1.8.0-openjdk is already installed.
+     Started: 10:17:55.668473
+    Duration: 0.359 ms
+     Changes:   
+----------
+          ID: tomcat_source
+    Function: file.managed
+        Name: /usr/local/src/apache-tomcat-8.0.26.tar.gz
+      Result: True
+     Comment: File /usr/local/src/apache-tomcat-8.0.26.tar.gz is in the correct state
+     Started: 10:17:55.668907
+    Duration: 40.964 ms
+     Changes:   
+----------
+          ID: tomcat_source
+    Function: cmd.run
+        Name: tar -xzf apache-tomcat-8.0.26.tar.gz && rm -rf /usr/local/src/apache-tomcat-8.0.26/webapps/* && rm -rf /usr/local/src/apache-tomcat-8.0.26/logs
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:55.710593
+    Duration: 5.439 ms
+     Changes:   
+----------
+          ID: /data/shell
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/shell is in the correct state
+     Started: 10:17:55.716156
+    Duration: 0.68 ms
+     Changes:   
+----------
+          ID: /data/shell/project_release.sh
+    Function: file.managed
+      Result: True
+     Comment: File /data/shell/project_release.sh is in the correct state
+     Started: 10:17:55.716912
+    Duration: 2.716 ms
+     Changes:   
+----------
+          ID: tomcat-base
+    Function: cmd.run
+        Name: cp -r apache-tomcat-8.0.26 /usr/local/tomcat-base
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:55.720196
+    Duration: 4.33 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-base/conf/server.xml
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-base/conf/server.xml is in the correct state
+     Started: 10:17:55.724650
+    Duration: 2.864 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-base/bin/setenv.sh
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-base/bin/setenv.sh is in the correct state
+     Started: 10:17:55.727596
+    Duration: 2.481 ms
+     Changes:   
+----------
+          ID: /data/www/base
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/www/base is in the correct state
+     Started: 10:17:55.730163
+    Duration: 0.573 ms
+     Changes:   
+----------
+          ID: /data/logs/base
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/logs/base is in the correct state
+     Started: 10:17:55.730816
+    Duration: 0.549 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-base/webapps/ROOT
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-base/webapps/ROOT is present and owned by root:root
+     Started: 10:17:55.731440
+    Duration: 0.953 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-base/logs
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-base/logs is present and owned by root:root
+     Started: 10:17:55.732470
+    Duration: 0.94 ms
+     Changes:   
+----------
+          ID: tomcat-base_service
+    Function: file.managed
+        Name: /usr/lib/systemd/system/tomcat-base.service
+      Result: True
+     Comment: File /usr/lib/systemd/system/tomcat-base.service is in the correct state
+     Started: 10:17:55.733488
+    Duration: 60.505 ms
+     Changes:   
+----------
+          ID: tomcat-base_service
+    Function: service.running
+        Name: tomcat-base
+      Result: True
+     Comment: Service tomcat-base is already enabled, and is in the desired state
+     Started: 10:17:55.795413
+    Duration: 223.45 ms
+     Changes:   
+----------
+          ID: tomcat-base_service
+    Function: cmd.run
+        Name: systemctl enable tomcat-base
+      Result: True
+     Comment: Command "systemctl enable tomcat-base" run
+     Started: 10:17:56.019007
+    Duration: 31.535 ms
+     Changes:   
+              ----------
+              pid:
+                  29317
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: tomcat-member
+    Function: cmd.run
+        Name: cp -r apache-tomcat-8.0.26 /usr/local/tomcat-member
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:56.051213
+    Duration: 4.652 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-member/conf/server.xml
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-member/conf/server.xml is in the correct state
+     Started: 10:17:56.055991
+    Duration: 3.005 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-member/bin/setenv.sh
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-member/bin/setenv.sh is in the correct state
+     Started: 10:17:56.059077
+    Duration: 2.783 ms
+     Changes:   
+----------
+          ID: /data/www/member
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/www/member is in the correct state
+     Started: 10:17:56.061941
+    Duration: 0.566 ms
+     Changes:   
+----------
+          ID: /data/logs/member
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/logs/member is in the correct state
+     Started: 10:17:56.062582
+    Duration: 0.578 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-member/webapps/ROOT
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-member/webapps/ROOT is present and owned by root:root
+     Started: 10:17:56.063238
+    Duration: 0.963 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-member/logs
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-member/logs is present and owned by root:root
+     Started: 10:17:56.064278
+    Duration: 0.854 ms
+     Changes:   
+----------
+          ID: tomcat-member_service
+    Function: file.managed
+        Name: /usr/lib/systemd/system/tomcat-member.service
+      Result: True
+     Comment: File /usr/lib/systemd/system/tomcat-member.service is in the correct state
+     Started: 10:17:56.065210
+    Duration: 6.557 ms
+     Changes:   
+----------
+          ID: tomcat-member_service
+    Function: service.running
+        Name: tomcat-member
+      Result: True
+     Comment: Service tomcat-member is already enabled, and is in the desired state
+     Started: 10:17:56.073232
+    Duration: 224.756 ms
+     Changes:   
+----------
+          ID: tomcat-member_service
+    Function: cmd.run
+        Name: systemctl enable tomcat-member
+      Result: True
+     Comment: Command "systemctl enable tomcat-member" run
+     Started: 10:17:56.298121
+    Duration: 30.817 ms
+     Changes:   
+              ----------
+              pid:
+                  29352
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: tomcat-product-search
+    Function: cmd.run
+        Name: cp -r apache-tomcat-8.0.26 /usr/local/tomcat-product-search
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:56.329584
+    Duration: 4.578 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-product-search/conf/server.xml
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-product-search/conf/server.xml is in the correct state
+     Started: 10:17:56.334288
+    Duration: 3.206 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-product-search/bin/setenv.sh
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-product-search/bin/setenv.sh is in the correct state
+     Started: 10:17:56.337576
+    Duration: 2.576 ms
+     Changes:   
+----------
+          ID: /data/www/product-search
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/www/product-search is in the correct state
+     Started: 10:17:56.340234
+    Duration: 0.597 ms
+     Changes:   
+----------
+          ID: /data/logs/product-search
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/logs/product-search is in the correct state
+     Started: 10:17:56.340908
+    Duration: 0.535 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-product-search/webapps/ROOT
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-product-search/webapps/ROOT is present and owned by root:root
+     Started: 10:17:56.341522
+    Duration: 0.972 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-product-search/logs
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-product-search/logs is present and owned by root:root
+     Started: 10:17:56.342571
+    Duration: 0.849 ms
+     Changes:   
+----------
+          ID: tomcat-product-search_service
+    Function: file.managed
+        Name: /usr/lib/systemd/system/tomcat-product-search.service
+      Result: True
+     Comment: File /usr/lib/systemd/system/tomcat-product-search.service is in the correct state
+     Started: 10:17:56.343496
+    Duration: 6.348 ms
+     Changes:   
+----------
+          ID: tomcat-product-search_service
+    Function: service.running
+        Name: tomcat-product-search
+      Result: True
+     Comment: Service tomcat-product-search is already enabled, and is in the desired state
+     Started: 10:17:56.351415
+    Duration: 224.515 ms
+     Changes:   
+----------
+          ID: tomcat-product-search_service
+    Function: cmd.run
+        Name: systemctl enable tomcat-product-search
+      Result: True
+     Comment: Command "systemctl enable tomcat-product-search" run
+     Started: 10:17:56.576070
+    Duration: 31.0 ms
+     Changes:   
+              ----------
+              pid:
+                  29387
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: tomcat-advert
+    Function: cmd.run
+        Name: cp -r apache-tomcat-8.0.26 /usr/local/tomcat-advert
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:56.607742
+    Duration: 4.497 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-advert/conf/server.xml
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-advert/conf/server.xml is in the correct state
+     Started: 10:17:56.612366
+    Duration: 3.107 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-advert/bin/setenv.sh
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-advert/bin/setenv.sh is in the correct state
+     Started: 10:17:56.615555
+    Duration: 2.613 ms
+     Changes:   
+----------
+          ID: /data/www/advert
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/www/advert is in the correct state
+     Started: 10:17:56.618251
+    Duration: 0.601 ms
+     Changes:   
+----------
+          ID: /data/logs/advert
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/logs/advert is in the correct state
+     Started: 10:17:56.618932
+    Duration: 0.596 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-advert/webapps/ROOT
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-advert/webapps/ROOT is present and owned by root:root
+     Started: 10:17:56.619606
+    Duration: 1.012 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-advert/logs
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-advert/logs is present and owned by root:root
+     Started: 10:17:56.620714
+    Duration: 0.864 ms
+     Changes:   
+----------
+          ID: tomcat-advert_service
+    Function: file.managed
+        Name: /usr/lib/systemd/system/tomcat-advert.service
+      Result: True
+     Comment: File /usr/lib/systemd/system/tomcat-advert.service is in the correct state
+     Started: 10:17:56.621658
+    Duration: 6.478 ms
+     Changes:   
+----------
+          ID: tomcat-advert_service
+    Function: service.running
+        Name: tomcat-advert
+      Result: True
+     Comment: Service tomcat-advert is already enabled, and is in the desired state
+     Started: 10:17:56.629621
+    Duration: 221.526 ms
+     Changes:   
+----------
+          ID: tomcat-advert_service
+    Function: cmd.run
+        Name: systemctl enable tomcat-advert
+      Result: True
+     Comment: Command "systemctl enable tomcat-advert" run
+     Started: 10:17:56.851280
+    Duration: 31.033 ms
+     Changes:   
+              ----------
+              pid:
+                  29422
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: tomcat-ipn
+    Function: cmd.run
+        Name: cp -r apache-tomcat-8.0.26 /usr/local/tomcat-ipn
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:56.882961
+    Duration: 4.513 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-ipn/conf/server.xml
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-ipn/conf/server.xml is in the correct state
+     Started: 10:17:56.887598
+    Duration: 3.109 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-ipn/bin/setenv.sh
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-ipn/bin/setenv.sh is in the correct state
+     Started: 10:17:56.890794
+    Duration: 2.656 ms
+     Changes:   
+----------
+          ID: /data/www/ipn
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/www/ipn is in the correct state
+     Started: 10:17:56.893532
+    Duration: 0.57 ms
+     Changes:   
+----------
+          ID: /data/logs/ipn
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/logs/ipn is in the correct state
+     Started: 10:17:56.894178
+    Duration: 0.566 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-ipn/webapps/ROOT
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-ipn/webapps/ROOT is present and owned by root:root
+     Started: 10:17:56.894833
+    Duration: 0.948 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-ipn/logs
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-ipn/logs is present and owned by root:root
+     Started: 10:17:56.895859
+    Duration: 0.83 ms
+     Changes:   
+----------
+          ID: tomcat-ipn_service
+    Function: file.managed
+        Name: /usr/lib/systemd/system/tomcat-ipn.service
+      Result: True
+     Comment: File /usr/lib/systemd/system/tomcat-ipn.service is in the correct state
+     Started: 10:17:56.896784
+    Duration: 7.088 ms
+     Changes:   
+----------
+          ID: tomcat-ipn_service
+    Function: service.running
+        Name: tomcat-ipn
+      Result: True
+     Comment: Service tomcat-ipn is already enabled, and is in the desired state
+     Started: 10:17:56.905289
+    Duration: 222.69 ms
+     Changes:   
+----------
+          ID: tomcat-ipn_service
+    Function: cmd.run
+        Name: systemctl enable tomcat-ipn
+      Result: True
+     Comment: Command "systemctl enable tomcat-ipn" run
+     Started: 10:17:57.128111
+    Duration: 31.884 ms
+     Changes:   
+              ----------
+              pid:
+                  29457
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: tomcat-rabbitmq-producer
+    Function: cmd.run
+        Name: cp -r apache-tomcat-8.0.26 /usr/local/tomcat-rabbitmq-producer
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:57.160628
+    Duration: 4.567 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-rabbitmq-producer/conf/server.xml
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-rabbitmq-producer/conf/server.xml is in the correct state
+     Started: 10:17:57.165321
+    Duration: 3.19 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-rabbitmq-producer/bin/setenv.sh
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-rabbitmq-producer/bin/setenv.sh is in the correct state
+     Started: 10:17:57.168596
+    Duration: 2.469 ms
+     Changes:   
+----------
+          ID: /data/www/rabbitmq-producer
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/www/rabbitmq-producer is in the correct state
+     Started: 10:17:57.171146
+    Duration: 0.561 ms
+     Changes:   
+----------
+          ID: /data/logs/rabbitmq-producer
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/logs/rabbitmq-producer is in the correct state
+     Started: 10:17:57.171788
+    Duration: 0.534 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-rabbitmq-producer/webapps/ROOT
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-rabbitmq-producer/webapps/ROOT is present and owned by root:root
+     Started: 10:17:57.172400
+    Duration: 0.957 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-rabbitmq-producer/logs
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-rabbitmq-producer/logs is present and owned by root:root
+     Started: 10:17:57.173434
+    Duration: 0.865 ms
+     Changes:   
+----------
+          ID: tomcat-rabbitmq-producer_service
+    Function: file.managed
+        Name: /usr/lib/systemd/system/tomcat-rabbitmq-producer.service
+      Result: True
+     Comment: File /usr/lib/systemd/system/tomcat-rabbitmq-producer.service is in the correct state
+     Started: 10:17:57.174377
+    Duration: 6.401 ms
+     Changes:   
+----------
+          ID: tomcat-rabbitmq-producer_service
+    Function: service.running
+        Name: tomcat-rabbitmq-producer
+      Result: True
+     Comment: Service tomcat-rabbitmq-producer is already enabled, and is running
+     Started: 10:17:57.182320
+    Duration: 328.798 ms
+     Changes:   
+              ----------
+              tomcat-rabbitmq-producer:
+                  True
+----------
+          ID: tomcat-rabbitmq-producer_service
+    Function: cmd.run
+        Name: systemctl enable tomcat-rabbitmq-producer
+      Result: True
+     Comment: Command "systemctl enable tomcat-rabbitmq-producer" run
+     Started: 10:17:57.511257
+    Duration: 31.93 ms
+     Changes:   
+              ----------
+              pid:
+                  29521
+              retcode:
+                  0
+              stderr:
+              stdout:
+
+Summary
+-------------
+Succeeded: 88 (changed=8)
+Failed:     0
+-------------
+Total states run:     88
+uat-api-172-31-41-23:
+----------
+          ID: common_packages
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed.
+     Started: 10:17:54.698382
+    Duration: 391.23 ms
+     Changes:   
+----------
+          ID: /etc/security/limits.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/security/limits.conf is in the correct state
+     Started: 10:17:55.091353
+    Duration: 3.102 ms
+     Changes:   
+----------
+          ID: kernel.msgmnb
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.msgmnb = 65536 is already set
+     Started: 10:17:55.094769
+    Duration: 24.111 ms
+     Changes:   
+----------
+          ID: kernel.msgmax
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.msgmax = 65536 is already set
+     Started: 10:17:55.119000
+    Duration: 22.193 ms
+     Changes:   
+----------
+          ID: kernel.shmmax
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.shmmax = 68719476736 is already set
+     Started: 10:17:55.141311
+    Duration: 22.001 ms
+     Changes:   
+----------
+          ID: kernel.shmall
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.shmall = 4294967296 is already set
+     Started: 10:17:55.163433
+    Duration: 22.113 ms
+     Changes:   
+----------
+          ID: kernel.sysrq
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.sysrq = 0 is already set
+     Started: 10:17:55.185668
+    Duration: 21.888 ms
+     Changes:   
+----------
+          ID: kernel.core_uses_pid
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.core_uses_pid = 1 is already set
+     Started: 10:17:55.207685
+    Duration: 22.021 ms
+     Changes:   
+----------
+          ID: vm.overcommit_memory
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value vm.overcommit_memory = 1 is already set
+     Started: 10:17:55.229826
+    Duration: 23.849 ms
+     Changes:   
+----------
+          ID: net.ipv4.ip_forward
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.ip_forward = 0 is already set
+     Started: 10:17:55.253796
+    Duration: 21.914 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.default.rp_filter
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.default.rp_filter = 1 is already set
+     Started: 10:17:55.275832
+    Duration: 22.059 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.default.accept_source_route
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.default.accept_source_route = 0 is already set
+     Started: 10:17:55.298012
+    Duration: 22.01 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_syncookies
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_syncookies = 1 is already set
+     Started: 10:17:55.320141
+    Duration: 22.1 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_synack_retries
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_synack_retries = 2 is already set
+     Started: 10:17:55.342364
+    Duration: 22.141 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_tw_reuse
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_tw_reuse = 1 is already set
+     Started: 10:17:55.364629
+    Duration: 22.179 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_tw_recycle
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_tw_recycle = 1 is already set
+     Started: 10:17:55.386929
+    Duration: 22.164 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_fin_timeout
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_fin_timeout = 30 is already set
+     Started: 10:17:55.409216
+    Duration: 22.444 ms
+     Changes:   
+----------
+          ID: net.core.somaxconn
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.core.somaxconn = 8192 is already set
+     Started: 10:17:55.431786
+    Duration: 22.593 ms
+     Changes:   
+----------
+          ID: net.ipv4.ip_local_port_range
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.ip_local_port_range = 1024 65535 is already set
+     Started: 10:17:55.454531
+    Duration: 22.623 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: pkg.installed
+        Name: ntp
+      Result: True
+     Comment: Package ntp is already installed.
+     Started: 10:17:55.477276
+    Duration: 0.484 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: service.running
+        Name: ntpd
+      Result: True
+     Comment: The service ntpd is already running
+     Started: 10:17:55.478794
+    Duration: 165.54 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: cmd.run
+        Name: systemctl enable ntpd
+      Result: True
+     Comment: Command "systemctl enable ntpd" run
+     Started: 10:17:55.645202
+    Duration: 36.971 ms
+     Changes:   
+              ----------
+              pid:
+                  10360
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: /etc/profile
+    Function: file.append
+      Result: True
+     Comment: File /etc/profile is in correct state
+     Started: 10:17:55.682319
+    Duration: 1.557 ms
+     Changes:   
+----------
+          ID: tomcat_source
+    Function: pkg.installed
+        Name: java-1.8.0-openjdk
+      Result: True
+     Comment: Package java-1.8.0-openjdk is already installed.
+     Started: 10:17:55.683958
+    Duration: 0.338 ms
+     Changes:   
+----------
+          ID: tomcat_source
+    Function: file.managed
+        Name: /usr/local/src/apache-tomcat-8.0.26.tar.gz
+      Result: True
+     Comment: File /usr/local/src/apache-tomcat-8.0.26.tar.gz is in the correct state
+     Started: 10:17:55.684369
+    Duration: 46.633 ms
+     Changes:   
+----------
+          ID: tomcat_source
+    Function: cmd.run
+        Name: tar -xzf apache-tomcat-8.0.26.tar.gz && rm -rf /usr/local/src/apache-tomcat-8.0.26/webapps/* && rm -rf /usr/local/src/apache-tomcat-8.0.26/logs
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:55.731760
+    Duration: 5.509 ms
+     Changes:   
+----------
+          ID: /data/shell
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/shell is in the correct state
+     Started: 10:17:55.737405
+    Duration: 0.723 ms
+     Changes:   
+----------
+          ID: /data/shell/project_release.sh
+    Function: file.managed
+      Result: True
+     Comment: File /data/shell/project_release.sh is in the correct state
+     Started: 10:17:55.738208
+    Duration: 2.696 ms
+     Changes:   
+----------
+          ID: tomcat-rabbitmq-consumer
+    Function: cmd.run
+        Name: cp -r apache-tomcat-8.0.26 /usr/local/tomcat-rabbitmq-consumer
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:55.741499
+    Duration: 4.735 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-rabbitmq-consumer/conf/server.xml
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-rabbitmq-consumer/conf/server.xml is in the correct state
+     Started: 10:17:55.746357
+    Duration: 2.805 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-rabbitmq-consumer/bin/setenv.sh
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-rabbitmq-consumer/bin/setenv.sh is in the correct state
+     Started: 10:17:55.749243
+    Duration: 2.577 ms
+     Changes:   
+----------
+          ID: /data/www/rabbitmq-consumer
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/www/rabbitmq-consumer is in the correct state
+     Started: 10:17:55.751902
+    Duration: 0.593 ms
+     Changes:   
+----------
+          ID: /data/logs/rabbitmq-consumer
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/logs/rabbitmq-consumer is in the correct state
+     Started: 10:17:55.752575
+    Duration: 0.574 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-rabbitmq-consumer/webapps/ROOT
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-rabbitmq-consumer/webapps/ROOT is present and owned by root:root
+     Started: 10:17:55.753226
+    Duration: 0.989 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-rabbitmq-consumer/logs
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-rabbitmq-consumer/logs is present and owned by root:root
+     Started: 10:17:55.754292
+    Duration: 0.908 ms
+     Changes:   
+----------
+          ID: tomcat-rabbitmq-consumer_service
+    Function: file.managed
+        Name: /usr/lib/systemd/system/tomcat-rabbitmq-consumer.service
+      Result: True
+     Comment: File /usr/lib/systemd/system/tomcat-rabbitmq-consumer.service is in the correct state
+     Started: 10:17:55.755278
+    Duration: 45.865 ms
+     Changes:   
+----------
+          ID: tomcat-rabbitmq-consumer_service
+    Function: service.running
+        Name: tomcat-rabbitmq-consumer
+      Result: True
+     Comment: Service tomcat-rabbitmq-consumer is already enabled, and is in the desired state
+     Started: 10:17:55.802730
+    Duration: 249.53 ms
+     Changes:   
+----------
+          ID: tomcat-rabbitmq-consumer_service
+    Function: cmd.run
+        Name: systemctl enable tomcat-rabbitmq-consumer
+      Result: True
+     Comment: Command "systemctl enable tomcat-rabbitmq-consumer" run
+     Started: 10:17:56.052393
+    Duration: 35.81 ms
+     Changes:   
+              ----------
+              pid:
+                  10396
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: tomcat-index-search
+    Function: cmd.run
+        Name: cp -r apache-tomcat-8.0.26 /usr/local/tomcat-index-search
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:56.088896
+    Duration: 5.027 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-index-search/conf/server.xml
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-index-search/conf/server.xml is in the correct state
+     Started: 10:17:56.094048
+    Duration: 2.86 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-index-search/bin/setenv.sh
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-index-search/bin/setenv.sh is in the correct state
+     Started: 10:17:56.096990
+    Duration: 2.6 ms
+     Changes:   
+----------
+          ID: /data/www/index-search
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/www/index-search is in the correct state
+     Started: 10:17:56.099675
+    Duration: 0.576 ms
+     Changes:   
+----------
+          ID: /data/logs/index-search
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/logs/index-search is in the correct state
+     Started: 10:17:56.100330
+    Duration: 0.583 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-index-search/webapps/ROOT
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-index-search/webapps/ROOT is present and owned by root:root
+     Started: 10:17:56.100995
+    Duration: 0.985 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-index-search/logs
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-index-search/logs is present and owned by root:root
+     Started: 10:17:56.102060
+    Duration: 0.893 ms
+     Changes:   
+----------
+          ID: tomcat-index-search_service
+    Function: file.managed
+        Name: /usr/lib/systemd/system/tomcat-index-search.service
+      Result: True
+     Comment: File /usr/lib/systemd/system/tomcat-index-search.service is in the correct state
+     Started: 10:17:56.103029
+    Duration: 9.617 ms
+     Changes:   
+----------
+          ID: tomcat-index-search_service
+    Function: service.running
+        Name: tomcat-index-search
+      Result: True
+     Comment: Service tomcat-index-search is already enabled, and is in the desired state
+     Started: 10:17:56.114208
+    Duration: 248.986 ms
+     Changes:   
+----------
+          ID: tomcat-index-search_service
+    Function: cmd.run
+        Name: systemctl enable tomcat-index-search
+      Result: True
+     Comment: Command "systemctl enable tomcat-index-search" run
+     Started: 10:17:56.363328
+    Duration: 36.799 ms
+     Changes:   
+              ----------
+              pid:
+                  10431
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: tomcat-image
+    Function: cmd.run
+        Name: cp -r apache-tomcat-8.0.26 /usr/local/tomcat-image
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:56.400822
+    Duration: 4.909 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-image/conf/server.xml
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-image/conf/server.xml is in the correct state
+     Started: 10:17:56.405858
+    Duration: 3.16 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-image/bin/setenv.sh
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-image/bin/setenv.sh is in the correct state
+     Started: 10:17:56.409102
+    Duration: 2.508 ms
+     Changes:   
+----------
+          ID: /data/www/image
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/www/image is in the correct state
+     Started: 10:17:56.411695
+    Duration: 0.575 ms
+     Changes:   
+----------
+          ID: /data/logs/image
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/logs/image is in the correct state
+     Started: 10:17:56.412345
+    Duration: 0.568 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-image/webapps/ROOT
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-image/webapps/ROOT is present and owned by root:root
+     Started: 10:17:56.412990
+    Duration: 0.992 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-image/logs
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-image/logs is present and owned by root:root
+     Started: 10:17:56.414057
+    Duration: 0.869 ms
+     Changes:   
+----------
+          ID: tomcat-image_service
+    Function: file.managed
+        Name: /usr/lib/systemd/system/tomcat-image.service
+      Result: True
+     Comment: File /usr/lib/systemd/system/tomcat-image.service is in the correct state
+     Started: 10:17:56.415003
+    Duration: 6.553 ms
+     Changes:   
+----------
+          ID: tomcat-image_service
+    Function: service.running
+        Name: tomcat-image
+      Result: True
+     Comment: Service tomcat-image is already enabled, and is in the desired state
+     Started: 10:17:56.423050
+    Duration: 248.446 ms
+     Changes:   
+----------
+          ID: tomcat-image_service
+    Function: cmd.run
+        Name: systemctl enable tomcat-image
+      Result: True
+     Comment: Command "systemctl enable tomcat-image" run
+     Started: 10:17:56.671633
+    Duration: 35.246 ms
+     Changes:   
+              ----------
+              pid:
+                  10466
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: tomcat-logistics
+    Function: cmd.run
+        Name: cp -r apache-tomcat-8.0.26 /usr/local/tomcat-logistics
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:56.707616
+    Duration: 5.075 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-logistics/conf/server.xml
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-logistics/conf/server.xml is in the correct state
+     Started: 10:17:56.712836
+    Duration: 3.118 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-logistics/bin/setenv.sh
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-logistics/bin/setenv.sh is in the correct state
+     Started: 10:17:56.716038
+    Duration: 2.464 ms
+     Changes:   
+----------
+          ID: /data/www/logistics
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/www/logistics is in the correct state
+     Started: 10:17:56.718587
+    Duration: 0.576 ms
+     Changes:   
+----------
+          ID: /data/logs/logistics
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/logs/logistics is in the correct state
+     Started: 10:17:56.719243
+    Duration: 0.611 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-logistics/webapps/ROOT
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-logistics/webapps/ROOT is present and owned by root:root
+     Started: 10:17:56.719934
+    Duration: 1.002 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-logistics/logs
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-logistics/logs is present and owned by root:root
+     Started: 10:17:56.721016
+    Duration: 0.872 ms
+     Changes:   
+----------
+          ID: tomcat-logistics_service
+    Function: file.managed
+        Name: /usr/lib/systemd/system/tomcat-logistics.service
+      Result: True
+     Comment: File /usr/lib/systemd/system/tomcat-logistics.service is in the correct state
+     Started: 10:17:56.721966
+    Duration: 6.239 ms
+     Changes:   
+----------
+          ID: tomcat-logistics_service
+    Function: service.running
+        Name: tomcat-logistics
+      Result: True
+     Comment: Service tomcat-logistics is already enabled, and is in the desired state
+     Started: 10:17:56.729737
+    Duration: 245.636 ms
+     Changes:   
+----------
+          ID: tomcat-logistics_service
+    Function: cmd.run
+        Name: systemctl enable tomcat-logistics
+      Result: True
+     Comment: Command "systemctl enable tomcat-logistics" run
+     Started: 10:17:56.975523
+    Duration: 35.842 ms
+     Changes:   
+              ----------
+              pid:
+                  10501
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: tomcat-loyalty
+    Function: cmd.run
+        Name: cp -r apache-tomcat-8.0.26 /usr/local/tomcat-loyalty
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:57.012062
+    Duration: 5.116 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-loyalty/conf/server.xml
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-loyalty/conf/server.xml is in the correct state
+     Started: 10:17:57.017302
+    Duration: 2.901 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-loyalty/bin/setenv.sh
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-loyalty/bin/setenv.sh is in the correct state
+     Started: 10:17:57.020287
+    Duration: 2.41 ms
+     Changes:   
+----------
+          ID: /data/www/loyalty
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/www/loyalty is in the correct state
+     Started: 10:17:57.022780
+    Duration: 0.568 ms
+     Changes:   
+----------
+          ID: /data/logs/loyalty
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/logs/loyalty is in the correct state
+     Started: 10:17:57.023427
+    Duration: 0.574 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-loyalty/webapps/ROOT
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-loyalty/webapps/ROOT is present and owned by root:root
+     Started: 10:17:57.024079
+    Duration: 0.991 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-loyalty/logs
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-loyalty/logs is present and owned by root:root
+     Started: 10:17:57.025148
+    Duration: 0.88 ms
+     Changes:   
+----------
+          ID: tomcat-loyalty_service
+    Function: file.managed
+        Name: /usr/lib/systemd/system/tomcat-loyalty.service
+      Result: True
+     Comment: File /usr/lib/systemd/system/tomcat-loyalty.service is in the correct state
+     Started: 10:17:57.026107
+    Duration: 6.051 ms
+     Changes:   
+----------
+          ID: tomcat-loyalty_service
+    Function: service.running
+        Name: tomcat-loyalty
+      Result: True
+     Comment: Service tomcat-loyalty is already enabled, and is in the desired state
+     Started: 10:17:57.033717
+    Duration: 248.487 ms
+     Changes:   
+----------
+          ID: tomcat-loyalty_service
+    Function: cmd.run
+        Name: systemctl enable tomcat-loyalty
+      Result: True
+     Comment: Command "systemctl enable tomcat-loyalty" run
+     Started: 10:17:57.282332
+    Duration: 37.008 ms
+     Changes:   
+              ----------
+              pid:
+                  10536
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: tomcat-email
+    Function: cmd.run
+        Name: cp -r apache-tomcat-8.0.26 /usr/local/tomcat-email
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:57.320033
+    Duration: 5.056 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-email/conf/server.xml
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-email/conf/server.xml is in the correct state
+     Started: 10:17:57.325213
+    Duration: 3.204 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-email/bin/setenv.sh
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-email/bin/setenv.sh is in the correct state
+     Started: 10:17:57.328517
+    Duration: 2.385 ms
+     Changes:   
+----------
+          ID: /data/www/email
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/www/email is in the correct state
+     Started: 10:17:57.330984
+    Duration: 0.617 ms
+     Changes:   
+----------
+          ID: /data/logs/email
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/logs/email is in the correct state
+     Started: 10:17:57.331680
+    Duration: 0.565 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-email/webapps/ROOT
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-email/webapps/ROOT is present and owned by root:root
+     Started: 10:17:57.332325
+    Duration: 0.979 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-email/logs
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-email/logs is present and owned by root:root
+     Started: 10:17:57.333383
+    Duration: 0.878 ms
+     Changes:   
+----------
+          ID: tomcat-email_service
+    Function: file.managed
+        Name: /usr/lib/systemd/system/tomcat-email.service
+      Result: True
+     Comment: File /usr/lib/systemd/system/tomcat-email.service is in the correct state
+     Started: 10:17:57.334339
+    Duration: 6.128 ms
+     Changes:   
+----------
+          ID: tomcat-email_service
+    Function: service.running
+        Name: tomcat-email
+      Result: True
+     Comment: Service tomcat-email is already enabled, and is in the desired state
+     Started: 10:17:57.341981
+    Duration: 248.843 ms
+     Changes:   
+----------
+          ID: tomcat-email_service
+    Function: cmd.run
+        Name: systemctl enable tomcat-email
+      Result: True
+     Comment: Command "systemctl enable tomcat-email" run
+     Started: 10:17:57.590954
+    Duration: 36.803 ms
+     Changes:   
+              ----------
+              pid:
+                  10571
+              retcode:
+                  0
+              stderr:
+              stdout:
+
+Summary
+-------------
+Succeeded: 88 (changed=7)
+Failed:     0
+-------------
+Total states run:     88
+uat-web-172-31-45-126:
+----------
+          ID: common_packages
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed.
+     Started: 10:17:54.751913
+    Duration: 403.866 ms
+     Changes:   
+----------
+          ID: /etc/security/limits.conf
+    Function: file.managed
+      Result: True
+     Comment: File /etc/security/limits.conf is in the correct state
+     Started: 10:17:55.157510
+    Duration: 3.04 ms
+     Changes:   
+----------
+          ID: kernel.msgmnb
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.msgmnb = 65536 is already set
+     Started: 10:17:55.160835
+    Duration: 24.649 ms
+     Changes:   
+----------
+          ID: kernel.msgmax
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.msgmax = 65536 is already set
+     Started: 10:17:55.185600
+    Duration: 21.838 ms
+     Changes:   
+----------
+          ID: kernel.shmmax
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.shmmax = 68719476736 is already set
+     Started: 10:17:55.207552
+    Duration: 21.901 ms
+     Changes:   
+----------
+          ID: kernel.shmall
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.shmall = 4294967296 is already set
+     Started: 10:17:55.229570
+    Duration: 21.664 ms
+     Changes:   
+----------
+          ID: kernel.sysrq
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.sysrq = 0 is already set
+     Started: 10:17:55.251380
+    Duration: 21.958 ms
+     Changes:   
+----------
+          ID: kernel.core_uses_pid
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value kernel.core_uses_pid = 1 is already set
+     Started: 10:17:55.273455
+    Duration: 21.97 ms
+     Changes:   
+----------
+          ID: vm.overcommit_memory
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value vm.overcommit_memory = 1 is already set
+     Started: 10:17:55.295542
+    Duration: 21.814 ms
+     Changes:   
+----------
+          ID: net.ipv4.ip_forward
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.ip_forward = 0 is already set
+     Started: 10:17:55.317472
+    Duration: 21.955 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.default.rp_filter
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.default.rp_filter = 1 is already set
+     Started: 10:17:55.339545
+    Duration: 22.63 ms
+     Changes:   
+----------
+          ID: net.ipv4.conf.default.accept_source_route
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.conf.default.accept_source_route = 0 is already set
+     Started: 10:17:55.362309
+    Duration: 21.784 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_syncookies
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_syncookies = 1 is already set
+     Started: 10:17:55.384213
+    Duration: 22.523 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_synack_retries
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_synack_retries = 2 is already set
+     Started: 10:17:55.406854
+    Duration: 22.077 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_tw_reuse
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_tw_reuse = 1 is already set
+     Started: 10:17:55.429049
+    Duration: 21.815 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_tw_recycle
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_tw_recycle = 1 is already set
+     Started: 10:17:55.450982
+    Duration: 22.099 ms
+     Changes:   
+----------
+          ID: net.ipv4.tcp_fin_timeout
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.tcp_fin_timeout = 30 is already set
+     Started: 10:17:55.473198
+    Duration: 22.023 ms
+     Changes:   
+----------
+          ID: net.core.somaxconn
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.core.somaxconn = 8192 is already set
+     Started: 10:17:55.495355
+    Duration: 22.238 ms
+     Changes:   
+----------
+          ID: net.ipv4.ip_local_port_range
+    Function: sysctl.present
+      Result: True
+     Comment: Sysctl value net.ipv4.ip_local_port_range = 1024 65535 is already set
+     Started: 10:17:55.517712
+    Duration: 21.907 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: pkg.installed
+        Name: ntp
+      Result: True
+     Comment: Package ntp is already installed.
+     Started: 10:17:55.539738
+    Duration: 0.416 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: service.running
+        Name: ntpd
+      Result: True
+     Comment: The service ntpd is already running
+     Started: 10:17:55.541245
+    Duration: 165.901 ms
+     Changes:   
+----------
+          ID: ntpd_service
+    Function: cmd.run
+        Name: systemctl enable ntpd
+      Result: True
+     Comment: Command "systemctl enable ntpd" run
+     Started: 10:17:55.708013
+    Duration: 35.401 ms
+     Changes:   
+              ----------
+              pid:
+                  5939
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: /etc/profile
+    Function: file.append
+      Result: True
+     Comment: File /etc/profile is in correct state
+     Started: 10:17:55.743556
+    Duration: 1.844 ms
+     Changes:   
+----------
+          ID: www_user
+    Function: user.present
+        Name: www
+      Result: True
+     Comment: User www is present and up to date
+     Started: 10:17:55.746068
+    Duration: 0.876 ms
+     Changes:   
+----------
+          ID: nginx_pkg
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed.
+     Started: 10:17:55.747019
+    Duration: 0.406 ms
+     Changes:   
+----------
+          ID: nginx_source
+    Function: file.managed
+        Name: /usr/local/src/nginx-1.8.1.tar.gz
+      Result: True
+     Comment: File /usr/local/src/nginx-1.8.1.tar.gz is in the correct state
+     Started: 10:17:55.747496
+    Duration: 6.232 ms
+     Changes:   
+----------
+          ID: nginx_source
+    Function: cmd.run
+        Name: tar -xzf nginx-1.8.1.tar.gz
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:55.754535
+    Duration: 4.951 ms
+     Changes:   
+----------
+          ID: nginx_compile
+    Function: cmd.run
+        Name: ./configure --user=www --group=www --prefix=/usr/local/nginx --with-pcre --with-http_stub_status_module --with-http_ssl_module && make && make install
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:55.759616
+    Duration: 4.466 ms
+     Changes:   
+----------
+          ID: nginx_service
+    Function: file.managed
+        Name: /usr/lib/systemd/system/nginx.service
+      Result: True
+     Comment: File /usr/lib/systemd/system/nginx.service is in the correct state
+     Started: 10:17:55.764202
+    Duration: 2.697 ms
+     Changes:   
+----------
+          ID: nginx_conf
+    Function: file.managed
+        Name: /usr/local/nginx/conf/nginx.conf
+      Result: True
+     Comment: File /usr/local/nginx/conf/nginx.conf is in the correct state
+     Started: 10:17:55.770316
+    Duration: 2.677 ms
+     Changes:   
+----------
+          ID: /usr/local/nginx/conf/vhost/www.chicuu.com.conf
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/nginx/conf/vhost/www.chicuu.com.conf is in the correct state
+     Started: 10:17:55.773070
+    Duration: 6.463 ms
+     Changes:   
+----------
+          ID: /usr/local/nginx/conf/vhost/www.tomtop.com.conf
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/nginx/conf/vhost/www.tomtop.com.conf is in the correct state
+     Started: 10:17:55.779612
+    Duration: 18.035 ms
+     Changes:   
+----------
+          ID: nginx_service
+    Function: service.running
+        Name: nginx
+      Result: True
+     Comment: Service nginx is already enabled, and is in the desired state
+     Started: 10:17:55.798906
+    Duration: 247.76 ms
+     Changes:   
+----------
+          ID: nginx_service
+    Function: cmd.run
+        Name: systemctl enable nginx
+      Result: True
+     Comment: Command "systemctl enable nginx" run
+     Started: 10:17:56.046809
+    Duration: 32.173 ms
+     Changes:   
+              ----------
+              pid:
+                  5975
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: nginx_logs_directory
+    Function: file.directory
+        Name: /data/logs/nginx
+      Result: True
+     Comment: Directory /data/logs/nginx is in the correct state
+     Started: 10:17:56.079123
+    Duration: 0.787 ms
+     Changes:   
+----------
+          ID: nginx_vhost_directory
+    Function: file.directory
+        Name: /usr/local/nginx/conf/vhost
+      Result: True
+     Comment: Directory /usr/local/nginx/conf/vhost is in the correct state
+     Started: 10:17:56.079992
+    Duration: 0.624 ms
+     Changes:   
+----------
+          ID: php_pkg
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed.
+     Started: 10:17:56.080704
+    Duration: 0.768 ms
+     Changes:   
+----------
+          ID: php_source
+    Function: file.managed
+        Name: /usr/local/src/php-5.6.16.tar.gz
+      Result: True
+     Comment: File /usr/local/src/php-5.6.16.tar.gz is in the correct state
+     Started: 10:17:56.081546
+    Duration: 80.93 ms
+     Changes:   
+----------
+          ID: php_source
+    Function: cmd.run
+        Name: tar -xzf php-5.6.16.tar.gz
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:56.163357
+    Duration: 5.494 ms
+     Changes:   
+----------
+          ID: php_compile
+    Function: cmd.run
+        Name: ./configure --prefix=/usr/local/php --with-config-file-path=/usr/local/php/etc --enable-fpm --with-mysql --with-mysqli --with-pdo-mysql --with-mcrypt --enable-mbstring --with-mhash --with-openssl --with-freetype-dir --with-jpeg-dir --with-png-dir --with-zlib --with-libxml-dir --enable-xml --disable-rpath --with-gd --enable-gd-native-ttf --with-gettext --with-curl --enable-sockets --enable-bcmath --with-bz2 --with-gettext --with-xmlrpc --enable-zip --enable-soap --with-iconv-dir && make && make install
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:56.168978
+    Duration: 4.536 ms
+     Changes:   
+----------
+          ID: php_memcache_source
+    Function: file.managed
+        Name: /usr/local/src/memcache-3.0.5.tgz
+      Result: True
+     Comment: File /usr/local/src/memcache-3.0.5.tgz is in the correct state
+     Started: 10:17:56.173639
+    Duration: 3.225 ms
+     Changes:   
+----------
+          ID: php_memcache_source
+    Function: cmd.run
+        Name: tar -xzf memcache-3.0.5.tgz
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:56.177702
+    Duration: 4.258 ms
+     Changes:   
+----------
+          ID: php_memcache_compile
+    Function: cmd.run
+        Name: /usr/local/php/bin/phpize && ./configure --with-php-config=/usr/local/php/bin/php-config && make && make install
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:56.182083
+    Duration: 4.293 ms
+     Changes:   
+----------
+          ID: php_redis_source
+    Function: file.managed
+        Name: /usr/local/src/phpredis-2.2.4.tar.gz
+      Result: True
+     Comment: File /usr/local/src/phpredis-2.2.4.tar.gz is in the correct state
+     Started: 10:17:56.186496
+    Duration: 3.858 ms
+     Changes:   
+----------
+          ID: php_redis_source
+    Function: cmd.run
+        Name: tar -xzf phpredis-2.2.4.tar.gz
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:56.191159
+    Duration: 4.228 ms
+     Changes:   
+----------
+          ID: php_redis_compile
+    Function: cmd.run
+        Name: /usr/local/php/bin/phpize && ./configure --with-php-config=/usr/local/php/bin/php-config && make && make install
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:56.195508
+    Duration: 4.273 ms
+     Changes:   
+----------
+          ID: /usr/local/php/etc/php.ini
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/php/etc/php.ini is in the correct state
+     Started: 10:17:56.199900
+    Duration: 3.319 ms
+     Changes:   
+----------
+          ID: /usr/local/php/etc/php-fpm.conf
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/php/etc/php-fpm.conf is in the correct state
+     Started: 10:17:56.203316
+    Duration: 2.841 ms
+     Changes:   
+----------
+          ID: /etc/sysconfig/php-fpm
+    Function: file.managed
+      Result: True
+     Comment: File /etc/sysconfig/php-fpm is in the correct state
+     Started: 10:17:56.206237
+    Duration: 46.918 ms
+     Changes:   
+----------
+          ID: php-fpm_service
+    Function: file.managed
+        Name: /usr/lib/systemd/system/php-fpm.service
+      Result: True
+     Comment: File /usr/lib/systemd/system/php-fpm.service is in the correct state
+     Started: 10:17:56.253237
+    Duration: 2.408 ms
+     Changes:   
+----------
+          ID: php-fpm_service
+    Function: service.running
+        Name: php-fpm
+      Result: True
+     Comment: Service php-fpm is already enabled, and is in the desired state
+     Started: 10:17:56.257190
+    Duration: 248.563 ms
+     Changes:   
+----------
+          ID: php-fpm_service
+    Function: cmd.run
+        Name: systemctl enable php-fpm
+      Result: True
+     Comment: Command "systemctl enable php-fpm" run
+     Started: 10:17:56.505888
+    Duration: 32.606 ms
+     Changes:   
+              ----------
+              pid:
+                  6015
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: php_logs_directory
+    Function: file.directory
+        Name: /data/logs/php
+      Result: True
+     Comment: Directory /data/logs/php is in the correct state
+     Started: 10:17:56.538631
+    Duration: 0.731 ms
+     Changes:   
+----------
+          ID: tomcat_source
+    Function: pkg.installed
+        Name: java-1.8.0-openjdk
+      Result: True
+     Comment: Package java-1.8.0-openjdk is already installed.
+     Started: 10:17:56.539444
+    Duration: 0.346 ms
+     Changes:   
+----------
+          ID: tomcat_source
+    Function: file.managed
+        Name: /usr/local/src/apache-tomcat-8.0.26.tar.gz
+      Result: True
+     Comment: File /usr/local/src/apache-tomcat-8.0.26.tar.gz is in the correct state
+     Started: 10:17:56.539864
+    Duration: 39.999 ms
+     Changes:   
+----------
+          ID: tomcat_source
+    Function: cmd.run
+        Name: tar -xzf apache-tomcat-8.0.26.tar.gz && rm -rf /usr/local/src/apache-tomcat-8.0.26/webapps/* && rm -rf /usr/local/src/apache-tomcat-8.0.26/logs
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:56.580733
+    Duration: 4.982 ms
+     Changes:   
+----------
+          ID: /data/shell
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/shell is in the correct state
+     Started: 10:17:56.585842
+    Duration: 0.678 ms
+     Changes:   
+----------
+          ID: /data/shell/project_release.sh
+    Function: file.managed
+      Result: True
+     Comment: File /data/shell/project_release.sh is in the correct state
+     Started: 10:17:56.586596
+    Duration: 2.856 ms
+     Changes:   
+----------
+          ID: tomcat-cart
+    Function: cmd.run
+        Name: cp -r apache-tomcat-8.0.26 /usr/local/tomcat-cart
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:56.590079
+    Duration: 4.379 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-cart/conf/server.xml
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-cart/conf/server.xml is in the correct state
+     Started: 10:17:56.594579
+    Duration: 2.648 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-cart/bin/setenv.sh
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-cart/bin/setenv.sh is in the correct state
+     Started: 10:17:56.597333
+    Duration: 2.714 ms
+     Changes:   
+----------
+          ID: /data/www/cart
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/www/cart is in the correct state
+     Started: 10:17:56.600129
+    Duration: 0.572 ms
+     Changes:   
+----------
+          ID: /data/logs/cart
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/logs/cart is in the correct state
+     Started: 10:17:56.600777
+    Duration: 0.567 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-cart/webapps/ROOT
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-cart/webapps/ROOT is present and owned by root:root
+     Started: 10:17:56.601421
+    Duration: 0.964 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-cart/logs
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-cart/logs is present and owned by root:root
+     Started: 10:17:56.602459
+    Duration: 0.862 ms
+     Changes:   
+----------
+          ID: tomcat-cart_service
+    Function: file.managed
+        Name: /usr/lib/systemd/system/tomcat-cart.service
+      Result: True
+     Comment: File /usr/lib/systemd/system/tomcat-cart.service is in the correct state
+     Started: 10:17:56.603393
+    Duration: 2.392 ms
+     Changes:   
+----------
+          ID: tomcat-cart_service
+    Function: service.running
+        Name: tomcat-cart
+      Result: True
+     Comment: Service tomcat-cart is already enabled, and is in the desired state
+     Started: 10:17:56.606698
+    Duration: 247.786 ms
+     Changes:   
+----------
+          ID: tomcat-cart_service
+    Function: cmd.run
+        Name: systemctl enable tomcat-cart
+      Result: True
+     Comment: Command "systemctl enable tomcat-cart" run
+     Started: 10:17:56.854625
+    Duration: 33.307 ms
+     Changes:   
+              ----------
+              pid:
+                  6051
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: tomcat-management
+    Function: cmd.run
+        Name: cp -r apache-tomcat-8.0.26 /usr/local/tomcat-management
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:56.888718
+    Duration: 4.58 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-management/conf/server.xml
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-management/conf/server.xml is in the correct state
+     Started: 10:17:56.893439
+    Duration: 3.306 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-management/bin/setenv.sh
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-management/bin/setenv.sh is in the correct state
+     Started: 10:17:56.896826
+    Duration: 2.415 ms
+     Changes:   
+----------
+          ID: /data/www/management
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/www/management is in the correct state
+     Started: 10:17:56.899322
+    Duration: 0.576 ms
+     Changes:   
+----------
+          ID: /data/logs/management
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/logs/management is in the correct state
+     Started: 10:17:56.899974
+    Duration: 0.556 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-management/webapps/ROOT
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-management/webapps/ROOT is present and owned by root:root
+     Started: 10:17:56.900608
+    Duration: 0.995 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-management/logs
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-management/logs is present and owned by root:root
+     Started: 10:17:56.901679
+    Duration: 0.862 ms
+     Changes:   
+----------
+          ID: tomcat-management_service
+    Function: file.managed
+        Name: /usr/lib/systemd/system/tomcat-management.service
+      Result: True
+     Comment: File /usr/lib/systemd/system/tomcat-management.service is in the correct state
+     Started: 10:17:56.902617
+    Duration: 6.323 ms
+     Changes:   
+----------
+          ID: tomcat-management_service
+    Function: service.running
+        Name: tomcat-management
+      Result: True
+     Comment: Service tomcat-management is already enabled, and is in the desired state
+     Started: 10:17:56.909890
+    Duration: 247.616 ms
+     Changes:   
+----------
+          ID: tomcat-management_service
+    Function: cmd.run
+        Name: systemctl enable tomcat-management
+      Result: True
+     Comment: Command "systemctl enable tomcat-management" run
+     Started: 10:17:57.157640
+    Duration: 32.871 ms
+     Changes:   
+              ----------
+              pid:
+                  6086
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: tomcat-tomtopdataanalysis
+    Function: cmd.run
+        Name: cp -r apache-tomcat-8.0.26 /usr/local/tomcat-tomtopdataanalysis
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:57.191234
+    Duration: 4.706 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-tomtopdataanalysis/conf/server.xml
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-tomtopdataanalysis/conf/server.xml is in the correct state
+     Started: 10:17:57.196061
+    Duration: 3.048 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-tomtopdataanalysis/bin/setenv.sh
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-tomtopdataanalysis/bin/setenv.sh is in the correct state
+     Started: 10:17:57.199189
+    Duration: 2.497 ms
+     Changes:   
+----------
+          ID: /data/www/tomtopdataanalysis
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/www/tomtopdataanalysis is in the correct state
+     Started: 10:17:57.201767
+    Duration: 0.577 ms
+     Changes:   
+----------
+          ID: /data/logs/tomtopdataanalysis
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/logs/tomtopdataanalysis is in the correct state
+     Started: 10:17:57.202422
+    Duration: 0.553 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-tomtopdataanalysis/webapps/ROOT
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-tomtopdataanalysis/webapps/ROOT is present and owned by root:root
+     Started: 10:17:57.203050
+    Duration: 0.965 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-tomtopdataanalysis/logs
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-tomtopdataanalysis/logs is present and owned by root:root
+     Started: 10:17:57.204091
+    Duration: 0.862 ms
+     Changes:   
+----------
+          ID: tomcat-tomtopdataanalysis_service
+    Function: file.managed
+        Name: /usr/lib/systemd/system/tomcat-tomtopdataanalysis.service
+      Result: True
+     Comment: File /usr/lib/systemd/system/tomcat-tomtopdataanalysis.service is in the correct state
+     Started: 10:17:57.205029
+    Duration: 6.23 ms
+     Changes:   
+----------
+          ID: tomcat-tomtopdataanalysis_service
+    Function: service.running
+        Name: tomcat-tomtopdataanalysis
+      Result: True
+     Comment: Service tomcat-tomtopdataanalysis is already enabled, and is in the desired state
+     Started: 10:17:57.212240
+    Duration: 247.738 ms
+     Changes:   
+----------
+          ID: tomcat-tomtopdataanalysis_service
+    Function: cmd.run
+        Name: systemctl enable tomcat-tomtopdataanalysis
+      Result: True
+     Comment: Command "systemctl enable tomcat-tomtopdataanalysis" run
+     Started: 10:17:57.460116
+    Duration: 34.043 ms
+     Changes:   
+              ----------
+              pid:
+                  6121
+              retcode:
+                  0
+              stderr:
+              stdout:
+----------
+          ID: tomcat-search-job
+    Function: cmd.run
+        Name: cp -r apache-tomcat-8.0.26 /usr/local/tomcat-search-job
+      Result: True
+     Comment: unless execution succeeded
+     Started: 10:17:57.494907
+    Duration: 4.573 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-search-job/conf/server.xml
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-search-job/conf/server.xml is in the correct state
+     Started: 10:17:57.499600
+    Duration: 3.01 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-search-job/bin/setenv.sh
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/tomcat-search-job/bin/setenv.sh is in the correct state
+     Started: 10:17:57.502693
+    Duration: 2.757 ms
+     Changes:   
+----------
+          ID: /data/www/search-job
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/www/search-job is in the correct state
+     Started: 10:17:57.505529
+    Duration: 0.553 ms
+     Changes:   
+----------
+          ID: /data/logs/search-job
+    Function: file.directory
+      Result: True
+     Comment: Directory /data/logs/search-job is in the correct state
+     Started: 10:17:57.506157
+    Duration: 0.556 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-search-job/webapps/ROOT
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-search-job/webapps/ROOT is present and owned by root:root
+     Started: 10:17:57.506790
+    Duration: 0.957 ms
+     Changes:   
+----------
+          ID: /usr/local/tomcat-search-job/logs
+    Function: file.symlink
+      Result: True
+     Comment: Symlink /usr/local/tomcat-search-job/logs is present and owned by root:root
+     Started: 10:17:57.507822
+    Duration: 0.844 ms
+     Changes:   
+----------
+          ID: tomcat-search-job_service
+    Function: file.managed
+        Name: /usr/lib/systemd/system/tomcat-search-job.service
+      Result: True
+     Comment: File /usr/lib/systemd/system/tomcat-search-job.service is in the correct state
+     Started: 10:17:57.508740
+    Duration: 6.798 ms
+     Changes:   
+----------
+          ID: tomcat-search-job_service
+    Function: service.running
+        Name: tomcat-search-job
+      Result: True
+     Comment: Service tomcat-search-job is already enabled, and is in the desired state
+     Started: 10:17:57.516493
+    Duration: 247.161 ms
+     Changes:   
+----------
+          ID: tomcat-search-job_service
+    Function: cmd.run
+        Name: systemctl enable tomcat-search-job
+      Result: True
+     Comment: Command "systemctl enable tomcat-search-job" run
+     Started: 10:17:57.763790
+    Duration: 33.992 ms
+     Changes:   
+              ----------
+              pid:
+                  6157
+              retcode:
+                  0
+              stderr:
+              stdout:
+
+Summary
+-------------
+Succeeded: 98 (changed=7)
+Failed:     0
+-------------
+Total states run:     98
