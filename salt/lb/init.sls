@@ -11,25 +11,11 @@ nginx_lb_conf:
     - watch_in:
       - service: nginx_service
 
-{% for vhost in pillar['api_vhost'] %}
-/usr/local/nginx/conf/vhost/{{ vhost }}:
-  file.managed:
-    - source: salt://lb/files/{{ vhost }}
-    - user: root
-    - group: root
-    - mode: 644
-    - template: jinja
-    - defaults:
-        servername: {{ grains['ip_interfaces']['eth0'][0] }}
-    - watch_in:
-      - service: nginx_service
-{% endfor %}
-
 {% if grains['env'] == 'prod' %}
 {% for vhost in pillar['lb_vhost'] %}
 /usr/local/nginx/conf/vhost/{{ vhost }}:
   file.managed:
-    - source: salt://lb/files/{{ vhost }}
+    - source: salt://lb/files/vhost_prod/{{ vhost }}
     - user: root
     - group: root
     - mode: 644
@@ -45,7 +31,7 @@ nginx_lb_conf:
 {% for vhost in pillar['lb_vhost'] %}
 /usr/local/nginx/conf/vhost/{{ vhost }}:
   file.managed:
-    - source: salt://lb/files/{{ vhost }}
+    - source: salt://lb/files/vhost_uat{{ vhost }}
     - user: root
     - group: root
     - mode: 644
