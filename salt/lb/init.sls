@@ -31,7 +31,7 @@ nginx_lb_conf:
 {% for vhost in pillar['lb_vhost'] %}
 /usr/local/nginx/conf/vhost/{{ vhost }}:
   file.managed:
-    - source: salt://lb/files/vhost_uat{{ vhost }}
+    - source: salt://lb/files/vhost_uat/{{ vhost }}
     - user: root
     - group: root
     - mode: 644
