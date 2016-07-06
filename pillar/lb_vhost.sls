@@ -10,25 +10,25 @@ lb_vhost:
   - m.chicuu.com.conf
   - www.rcmoment.com.conf
   - m.rcmoment.com.conf
-  - cart.tomtop.com.conf
   - www.koogeek.com.conf
   - app.koogeek.com.conf
+  - cart.tomtop.com.conf
   - bos.tomtop-cdn.com.conf
 {% elif grains['env'] == 'uat' %}
-  - uat-static.tomtop-cdn.com.conf
-  - uat-static.chicuu.com.conf
-  - uat-static.rcmoment.com.conf
-  - uat-static.koogeek.com.conf
+  - staticuat.tomtop-cdn.com.conf
+  - staticuat.chicuu.com.conf
+  - staticuat.rcmoment.com.conf
+  - staticuat.koogeek.com.conf
   - uat.tomtop.com.conf
-  - uat-m.tomtop.com.conf
+  - muat.tomtop.com.conf
   - uat.chicuu.com.conf
-  - uat-m.chicuu.com.conf
+  - muat.chicuu.com.conf
   - uat.rcmoment.com.conf
-  - uat-m.rcmoment.com.conf
-  - uat-cart.tomtop.com.conf
+  - muat.rcmoment.com.conf
   - uat.koogeek.com.conf
   - stapp.koogeek.com.conf
-  - uat-bos.tomtop-cdn.com.conf
+  - cartuat.tomtop.com.conf
+  - bosuat.tomtop-cdn.com.conf
 {% endif %}
   - base.api.tomtop.com.conf
   - member.api.tomtop.com.conf
