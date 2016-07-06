@@ -2,7 +2,6 @@ base:
   'roles:lb':
     - match: grain
     - lb_vhost
-    - backend
     - project
 
   'roles:*web':
