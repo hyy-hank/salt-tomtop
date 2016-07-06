@@ -28,10 +28,10 @@ rcmoment_vhost:
   - muat.rcmoment.com.conf
 {% endif %}
 
-{% if 'koogeekweb' in grains['roles'] grains['env'] == 'prod' %}
+{% if 'koogeekweb' in grains['roles'] and grains['env'] == 'prod' %}
 koogeek_vhost:
   - www.koogeek.com.conf
-{% elif 'koogeekweb' in grains['roles'] grains['env'] == 'uat' %}
+{% elif 'koogeekweb' in grains['roles'] and grains['env'] == 'uat' %}
 koogeek_vhost:
   - uat.koogeek.com.conf
 {% endif %}
