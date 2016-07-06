@@ -5,7 +5,7 @@ tomtop_vhost:
 {% elif 'tomtopweb' in grains['roles'] and grains['env'] == 'uat' %}
 tomtop_vhost:
   - uat.tomtop.com.conf
-  - uat-m.tomtop.com.conf
+  - muat.tomtop.com.conf
 {% endif %}
 
 {% if 'chicuuweb' in grains['roles'] and grains['env'] == 'prod' %}
@@ -15,7 +15,7 @@ chicuu_vhost:
 {% elif 'chicuuweb' in grains['roles'] and grains['env'] == 'uat' %}
 chicuu_vhost:
   - uat.chicuu.com.conf
-  - uat-m.chicuu.com.conf
+  - muat.chicuu.com.conf
 {% endif %}
 
 {% if 'rcmomentweb' in grains['roles'] and grains['env'] == 'prod' %}
@@ -25,7 +25,7 @@ rcmoment_vhost:
 {% elif 'rcmomentweb' in grains['roles'] and grains['env'] == 'uat' %}
 rcmoment_vhost:
   - uat.rcmoment.com.conf
-  - uat-m.rcmoment.com.conf
+  - muat.rcmoment.com.conf
 {% endif %}
 
 {% if 'koogeekweb' in grains['roles'] grains['env'] == 'prod' %}
