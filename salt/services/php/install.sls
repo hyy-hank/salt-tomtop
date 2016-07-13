@@ -107,6 +107,7 @@ php_redis_compile:
     - mode: 644
     - requires:
       - cmd: php_compile
+    - template: jinja
 
 /usr/local/php/etc/php-fpm.conf:
   file.managed:
