@@ -11,6 +11,7 @@ nginx_lb_conf:
     - watch_in:
       - service: nginx_service
 
+{% if grains['env']  == 'prod' %}
 {% for vhost in pillar['lb_vhost'] %}
 /usr/local/nginx/conf/vhost/{{ vhost }}:
   file.managed:
@@ -24,7 +25,9 @@ nginx_lb_conf:
     - watch_in:
       - service: nginx_service
 {% endfor %}
+{% endif %}
 
+{% if grains['env']  == 'uat' %}
 {% for vhost in pillar['lb_vhost'] %}
 /usr/local/nginx/conf/vhost/{{ vhost }}:
   file.managed:
@@ -38,6 +41,7 @@ nginx_lb_conf:
     - watch_in:
       - service: nginx_service
 {% endfor %}
+{% endif %}
 
 {% for pem in pillar['ssl_pem'] %}
 /usr/local/nginx/conf/{{ pem }}:
