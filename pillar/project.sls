@@ -29,6 +29,7 @@ manage_project:
 static_project:
   - tomtopstatic
   - chicuustatic
+  - rcmomentstatic
   - koogeekstatic
 {% endif %}
 
