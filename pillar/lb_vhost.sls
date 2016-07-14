@@ -13,7 +13,7 @@ lb_vhost:
   - www.koogeek.com.conf
   - app.koogeek.com.conf
   - cart.tomtop.com.conf
-  - bos.tomtop-cdn.com.conf
+  - bos.tomtop.com.conf
 {% elif grains['env'] == 'uat' %}
   - staticuat.tomtop-cdn.com.conf
   - staticuat.chicuu.com.conf
@@ -28,7 +28,7 @@ lb_vhost:
   - uat.koogeek.com.conf
   - stapp.koogeek.com.conf
   - cartuat.tomtop.com.conf
-  - bosuat.tomtop-cdn.com.conf
+  - bosuat.tomtop.com.conf
 {% endif %}
   - base.api.tomtop.com.conf
   - member.api.tomtop.com.conf
