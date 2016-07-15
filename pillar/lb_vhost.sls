@@ -41,6 +41,7 @@ lb_vhost:
   - img.api.tomtop.com.conf
   - logistics.api.tomtop.com.conf
   - loyalty.api.tomtop.com.conf
+  - email.api.tomtop.com.conf
 
 
 ssl_pem:
