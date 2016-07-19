@@ -1,4 +1,4 @@
-/data/logs/nginx/*.log {
+/data/logs/php/*.log {
         daily
         missingok
         rotate 20
@@ -8,6 +8,6 @@
         notifempty
         sharedscripts
         postrotate
-                [ -f /usr/local/nginx/logs/nginx.pid ] && kill -USR1 `cat /usr/local/nginx/logs/nginx.pid`
+                [ -f /usr/local/php/var/run/php-fpm.pid ] && kill -USR1 `cat /usr/local/php/var/run/php-fpm.pid`
         endscript
 }
