@@ -146,3 +146,11 @@ php_logs_directory:
     - group: root
     - mode: 777
     - makedirs: True
+
+php_log_cut:
+  file.managed:
+    - name: /etc/logrotate.d/php
+    - source: salt://services/php/files/php
+    - user: root
+    - group: root
+    - mode: 644

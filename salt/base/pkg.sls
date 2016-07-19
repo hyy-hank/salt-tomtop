@@ -17,3 +17,4 @@ common_packages:
       - openssh-clients
       - openssl
       - openssl-devel
+      - logrotate
