@@ -62,3 +62,11 @@ nginx_service:
     - name: nginx
     - enable: True
     - reload: True
+
+nginx_log_cut:
+  file.managed:
+    - name: /etc/logrotate.d/nginx
+    - source: salt://services/nginx/files/nginx
+    - user: root
+    - group: root
+    - mode: 644

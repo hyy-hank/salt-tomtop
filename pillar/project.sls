@@ -21,7 +21,6 @@ api02_project:
 {% if 'manage' in grains['roles'] %}
 manage_project:
   - management
-  - tomtopdataanalysis
   - search-job
 {% endif %}
 
