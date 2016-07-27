@@ -4,6 +4,7 @@ lb_vhost:
   - static-src.chicuu.com.conf
   - static-src.rcmoment.com.conf
   - static-src.koogeek.com.conf
+  - static-src.camfere.com.conf
   - www.tomtop.com.conf
   - m.tomtop.com.conf
   - www.chicuu.com.conf
@@ -14,11 +15,13 @@ lb_vhost:
   - app.koogeek.com.conf
   - cart.tomtop.com.conf
   - bos.tomtop.com.conf
+  - www.camfere.com.conf
 {% elif grains['env'] == 'uat' %}
   - staticuat.tomtop-cdn.com.conf
   - staticuat.chicuu.com.conf
   - staticuat.rcmoment.com.conf
   - staticuat.koogeek.com.conf
+  - staticuat.camfere.com.conf
   - uat.tomtop.com.conf
   - muat.tomtop.com.conf
   - uat.chicuu.com.conf
@@ -29,6 +32,7 @@ lb_vhost:
   - stapp.koogeek.com.conf
   - cartuat.tomtop.com.conf
   - bosuat.tomtop.com.conf
+  - uat.camfere.com.conf
 {% endif %}
   - base.api.tomtop.com.conf
   - member.api.tomtop.com.conf

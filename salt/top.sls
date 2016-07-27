@@ -22,6 +22,10 @@ base:
     - match: grain
     - web.koogeek
 
+  'roles:camfereweb':
+    - match: grain
+    - web.camfere
+
   'roles:cart':
     - match: grain
     - cart
