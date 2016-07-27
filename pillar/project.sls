@@ -30,6 +30,7 @@ static_project:
   - chicuustatic
   - rcmomentstatic
   - koogeekstatic
+  - camferestatic
 {% endif %}
 
 {% if 'tomtopweb' in grains['roles'] %}
@@ -53,4 +54,9 @@ rcmoment_project:
 {% if 'koogeekweb' in grains['roles'] %}
 koogeek_project:
   - koogeekwww
+{% endif %}
+
+{% if 'camfereweb' in grains['roles'] %}
+camfere_project:
+  - camferewww
 {% endif %}
