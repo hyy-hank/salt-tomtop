@@ -107,7 +107,7 @@ php_igbinary_source：
     - group: root
     - mode: 644
   cmd.run:
-    - cmd: /usr/loca/src
+    - cmd: /usr/local/src
     - name: tar xf igbinary-1.2.1.tgz
     - unless: test -d /usr/local/src/igbinary-1.2.1
     - require:
