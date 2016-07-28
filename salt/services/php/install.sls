@@ -109,7 +109,7 @@ php_igbinary_source：
   cmd.run:
     - cmd: /usr/loca/src
     - name: tar xf igbinary-1.2.1.tgz
-    - unless: test -d /usr/local/src/igbinary-1.2.1.tgz
+    - unless: test -d /usr/local/src/igbinary-1.2.1
     - require:
       - file: php_igbinary_source
 php_igbinary_compile:
@@ -117,7 +117,7 @@ php_igbinary_compile:
     - cwd: /usr/local/src/igbinary-1.2.1
     - name: /usr/local/php/bin/phpize && ./configure --with-php-config=/usr/local/php/bin/php-config && make && make install
     - requires:
-      - cmd: php_redis_source
+      - cmd: php_igbinary_source
     - unless: test -f /usr/local/php/lib/php/extensions/no-debug-non-zts-20131226/igbinary.so
 
 /usr/local/php/etc/php.ini:
