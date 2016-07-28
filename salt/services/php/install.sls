@@ -99,6 +99,27 @@ php_redis_compile:
       - cmd: php_redis_source
     - unless: test -f /usr/local/php/lib/php/extensions/no-debug-non-zts-20131226/redis.so
 
+php_igbinary_source：
+  file.managed:
+    - name: /usr/local/src/igbinary-1.2.1.tgz
+    - source: salt://services/php/files/igbinary-1.2.1.tgz
+    - user: root
+    - group: root
+    - mode: 644
+  cmd.run:
+    - cmd: /usr/loca/src
+    - name: tar xf igbinary-1.2.1.tgz
+    - unless: test -d /usr/local/src/igbinary-1.2.1.tgz
+    - require:
+      - file: php_igbinary_source
+php_igbinary_compile:
+  cmd.run:
+    - cwd: /usr/local/src/igbinary-1.2.1
+    - name: /usr/local/php/bin/phpize && ./configure --with-php-config=/usr/local/php/bin/php-config && make && make install
+    - requires:
+      - cmd: php_redis_source
+    - unless: test -f /usr/local/php/lib/php/extensions/no-debug-non-zts-20131226/igbinary.so
+
 /usr/local/php/etc/php.ini:
   file.managed:
     - source: salt://services/php/files/php.ini
