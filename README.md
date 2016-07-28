@@ -1,2 +1,2 @@
 # salt-tomtop
-tomtop saltstack hello
+tomtop saltstack
