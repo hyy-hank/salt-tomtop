@@ -30,6 +30,30 @@ vm.swappiness:
   sysctl.present:
     - value: 0
 
+fs.file-max:
+  sysctl.present:
+    - value: 6815744
+
+net.core.rmem_max:
+  sysctl.present:
+    - value: 4194304
+
+net.core.wmem_max:
+  sysctl.present:
+    - value: 2097152
+
+net.core.wmem_default:
+  sysctl.present:
+    - value: 262144
+
+net.core.rmem_default:
+  sysctl.present:
+    - value: 262144
+
+net.ipv4.tcp_keepalive_time:
+  sysctl.present:
+    - value: 1200
+
 net.ipv4.ip_forward:
   sysctl.present:
     - value: 0
@@ -72,4 +96,4 @@ net.core.somaxconn:
 
 net.ipv4.ip_local_port_range:
   sysctl.present:
-    - value: 1024 65535
+    - value: 10000 65535
