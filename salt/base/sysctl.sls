@@ -34,21 +34,21 @@ fs.file-max:
   sysctl.present:
     - value: 6815744
 
+net.core.rmem_default:
+  sysctl.present:
+    - value: 262144
+
 net.core.rmem_max:
   sysctl.present:
-    - value: 4194304
-
-net.core.wmem_max:
-  sysctl.present:
-    - value: 2097152
+    - value: 16777216
 
 net.core.wmem_default:
   sysctl.present:
     - value: 262144
 
-net.core.rmem_default:
+net.core.wmem_max:
   sysctl.present:
-    - value: 262144
+    - value: 16777216
 
 net.ipv4.tcp_keepalive_time:
   sysctl.present:
@@ -65,6 +65,10 @@ net.ipv4.conf.default.rp_filter:
 net.ipv4.conf.default.accept_source_route:
   sysctl.present:
     - value: 0
+
+net.core.somaxconn:
+  sysctl.present:
+    - value: 8192
 
 net.ipv4.tcp_max_syn_backlog:
   sysctl.present:
@@ -89,10 +93,6 @@ net.ipv4.tcp_tw_recycle:
 net.ipv4.tcp_fin_timeout:
   sysctl.present:
     - value: 30
-
-net.core.somaxconn:
-  sysctl.present:
-    - value: 8192
 
 net.ipv4.ip_local_port_range:
   sysctl.present:
