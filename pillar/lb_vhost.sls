@@ -15,6 +15,7 @@ lb_vhost:
   - app.koogeek.com.conf
   - cart.tomtop.com.conf
   - newbos.tomtop-cdn.com.conf
+  - m.camfere.com.conf
   - www.camfere.com.conf
 {% elif grains['env'] == 'uat' %}
   - staticuat.tomtop-cdn.com.conf
@@ -32,6 +33,7 @@ lb_vhost:
   - stapp.koogeek.com.conf
   - cartuat.tomtop.com.conf
   - newbosuat.tomtop-cdn.com.conf
+  - muat.camfere.com.conf
   - uat.camfere.com.conf
 {% endif %}
   - base.api.tomtop.com.conf
