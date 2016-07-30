@@ -59,4 +59,5 @@ koogeek_project:
 {% if 'camfereweb' in grains['roles'] %}
 camfere_project:
   - camferewww
+  - camferem
 {% endif %}

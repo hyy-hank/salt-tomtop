@@ -39,7 +39,9 @@ koogeek_vhost:
 {% if 'camfereweb' in grains['roles'] and grains['env'] == 'prod' %}
 camfere_vhost:
   - www.camfere.com.conf
+  - m.camfere.com.conf
 {% elif 'camfereweb' in grains['roles'] and grains['env'] == 'uat' %}
 camfere_vhost:
   - uat.camfere.com.conf
+  - muat.camfere.com.conf
 {% endif %}
