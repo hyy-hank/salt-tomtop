@@ -142,9 +142,9 @@ php-fpm_service:
 php_logs_directory:
   file.directory:
     - name: /data/logs/php
-    - user: root
+    - user: www
     - group: root
-    - mode: 777
+    - mode: 775
     - makedirs: True
 
 php_log_cut:
