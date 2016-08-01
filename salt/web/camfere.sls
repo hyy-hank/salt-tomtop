@@ -29,8 +29,8 @@ camfere_nginx_conf:
 {% for project in pillar['camfere_project'] %}
 /data/www/{{ project  }}:
   file.directory:
-    - user: root
-    - group: root
+    - user: www
+    - group: www
     - mode: 755
     - makedirs: True
 {% endfor %}
