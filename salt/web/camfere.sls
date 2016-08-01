@@ -33,4 +33,8 @@ camfere_nginx_conf:
     - group: www
     - mode: 755
     - makedirs: True
+    - recurse:
+      - user
+      - group
+      - mode
 {% endfor %}
