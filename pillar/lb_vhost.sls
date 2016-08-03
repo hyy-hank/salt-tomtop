@@ -35,6 +35,24 @@ lb_vhost:
   - newbosuat.tomtop-cdn.com.conf
   - muat.camfere.com.conf
   - uat.camfere.com.conf
+{% elif grains['env'] == 'test' %}
+  - statictest.tomtop-cdn.com.conf
+  - statictest.chicuu.com.conf
+  - statictest.rcmoment.com.conf
+  - statictest.koogeek.com.conf
+  - staticteset.camfere.com.conf
+  - test.tomtop.com.conf
+  - mtest.tomtop.com.conf
+  - test.chicuu.com.conf
+  - mtest.chicuu.com.conf
+  - test.rcmoment.com.conf
+  - mtest.rcmoment.com.conf
+  - test.koogeek.com.conf
+  - apptest.koogeek.com.conf
+  - carttest.tomtop.com.conf
+  - newbostest.tomtop-cdn.com.conf
+  - mtest.camfere.com.conf
+  - test.camfere.com.conf
 {% endif %}
   - base.api.tomtop.com.conf
   - member.api.tomtop.com.conf
