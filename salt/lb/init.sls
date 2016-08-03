@@ -43,6 +43,22 @@ nginx_lb_conf:
 {% endfor %}
 {% endif %}
 
+{% if grains['env']  == 'test' %}
+{% for vhost in pillar['lb_vhost'] %}
+/usr/local/nginx/conf/vhost/{{ vhost }}:
+  file.managed:
+    - source: salt://lb/files/vhost_test/{{ vhost }}
+    - user: root
+    - group: root
+    - mode: 644
+    - template: jinja
+    - defaults:
+        servername: {{ grains['ip_interfaces']['eth0'][0] }}
+    - watch_in:
+      - service: nginx_service
+{% endfor %}
+{% endif %}
+
 {% for pem in pillar['ssl_pem'] %}
 /usr/local/nginx/conf/{{ pem }}:
   file.managed:
