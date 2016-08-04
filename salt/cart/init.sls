@@ -20,6 +20,7 @@ tomcat-cart:
     - source: salt://cart/files/setenv.sh
     - user: root
     - mode: 755
+    - template: jinja
 
 /data/www/cart:
   file.directory:
