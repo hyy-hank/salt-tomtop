@@ -93,7 +93,7 @@ tomcat_native_source:
 tomcat_native_compile:
   cmd.run:
     - cwd: /usr/local/src/tomcat-native-1.1.33-src/jni/native
-    - name: ./configure --prefix=/usr/local/tomcat-native --with-apr=/usr/local/apr/bin/apr-1-config --with-java-home=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.91-1.b14.el7_2.x86_64 && make && make install
+    - name: ./configure --prefix=/usr/local/tomcat-native --with-apr=/usr/local/apr/bin/apr-1-config --with-java-home=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.101-3.b13.el7_2.x86_64 && make && make install
     - requires:
       - cmd: apr_util_source
     - unless: test -d /usr/local/tomcat-native
