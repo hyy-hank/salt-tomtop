@@ -40,7 +40,7 @@ lb_vhost:
   - statictest.chicuu.com.conf
   - statictest.rcmoment.com.conf
   - statictest.koogeek.com.conf
-  - staticteset.camfere.com.conf
+  - statictest.camfere.com.conf
   - test.tomtop.com.conf
   - mtest.tomtop.com.conf
   - test.chicuu.com.conf
