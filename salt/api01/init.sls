@@ -21,6 +21,7 @@ tomcat-{{ project }}:
     - source: salt://api01/files/setenv-{{ project }}.sh
     - user: root
     - mode: 755
+    - template: jinja
 
 /data/www/{{ project }}:
   file.directory:
