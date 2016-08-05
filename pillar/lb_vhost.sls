@@ -72,8 +72,12 @@ ssl_pem:
   - server_tomtop.pem
   - server_chicuu.pem
   - server_rcmoment.pem
+  - server_camfere.pem
+  - server_tooarts.pem
 
 ssl_key:
   - server_tomtop.key
   - server_chicuu.key
   - server_rcmoment.key
+  - server_camfere.key
+  - server_tooarts.key
