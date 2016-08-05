@@ -1,0 +1,23 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+#api
+172.31.61.154	base.api.tomtop.com
+172.31.61.154	member.api.tomtop.com
+172.31.61.154	product.api.tomtop.com
+172.31.61.154	advert.api.tomtop.com
+172.31.61.154	ipn.api.tomtop.com
+172.31.61.154	producer.api.tomtop.com
+172.31.61.155	consumer.api.tomtop.com
+172.31.61.155	search.api.tomtop.com
+172.31.61.155	img.api.tomtop.com
+172.31.61.155	logistics.api.tomtop.com
+172.31.61.155	loyalty.api.tomtop.com
+172.31.61.155	email.api.tomtop.com
+
+#db
+172.31.53.127	redis01.tomtop.com
+172.31.53.127	mq01.tomtop.com
+172.31.53.127   es01.tomtop.com es01.tomtop.com es01.tomtop.com
+172.31.53.128	pgdb01.tomtop.com
+172.31.53.129	mydb01.tomtop.com 
+172.31.53.129	modb01.tomtop.com
