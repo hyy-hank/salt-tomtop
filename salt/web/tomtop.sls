@@ -13,9 +13,9 @@ tomtop_nginx_conf:
       - service: nginx_service
 
 {% for vhost in pillar['tomtop_vhost'] %}
-/usr/local/nginx/conf/vhost/{{ vhost }}:
+/usr/local/nginx/conf/vhost/{{ vhost }}.conf:
   file.managed:
-    - source: salt://web/files/{{ vhost }}
+    - source: salt://web/files/{{ vhost }}.conf
     - user: root
     - group: root
     - mode: 644
