@@ -1,0 +1,22 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+172.31.45.126   uat-web-172-31-45-126
+
+172.31.28.195 base.api.tomtop.com
+172.31.28.195 cart.tomtop.com cart.chicuu.com
+172.31.28.195 bos.tomtop-cdn.com
+172.31.28.195 member.api.tomtop.com
+172.31.28.195 product.api.tomtop.com
+172.31.28.195 advert.api.tomtop.com
+172.31.28.195 ipn.api.tomtop.com
+172.31.28.195 producer.api.tomtop.com
+172.31.28.195 consumer.api.tomtop.com
+172.31.28.195 search.api.tomtop.com
+172.31.28.195 img.api.tomtop.com
+172.31.28.195 logistics.api.tomtop.com
+172.31.28.195 loyalty.api.tomtop.com
+172.31.28.195 email.api.tomtop.com
+
+172.31.28.195 www.tomtop.com de.tomtop.com fr.tomtop.com it.tomtop.com jp.tomtop.com pt.tomtop.com
+
+172.31.28.195 www.chicuu.com
