@@ -13,9 +13,9 @@ nginx_lb_conf:
 
 {% if grains['env']  == 'prod' %}
 {% for vhost in pillar['lb_vhost'] %}
-/usr/local/nginx/conf/vhost/{{ vhost }}:
+/usr/local/nginx/conf/vhost/{{ vhost }}.conf:
   file.managed:
-    - source: salt://lb/files/vhost_prod/{{ vhost }}
+    - source: salt://lb/files/vhost_prod/{{ vhost }}.conf
     - user: root
     - group: root
     - mode: 644
@@ -29,9 +29,9 @@ nginx_lb_conf:
 
 {% if grains['env']  == 'uat' %}
 {% for vhost in pillar['lb_vhost'] %}
-/usr/local/nginx/conf/vhost/{{ vhost }}:
+/usr/local/nginx/conf/vhost/{{ vhost }}.conf:
   file.managed:
-    - source: salt://lb/files/vhost_uat/{{ vhost }}
+    - source: salt://lb/files/vhost_uat/{{ vhost }}.conf
     - user: root
     - group: root
     - mode: 644
@@ -45,9 +45,9 @@ nginx_lb_conf:
 
 {% if grains['env']  == 'test' %}
 {% for vhost in pillar['lb_vhost'] %}
-/usr/local/nginx/conf/vhost/{{ vhost }}:
+/usr/local/nginx/conf/vhost/{{ vhost }}.conf:
   file.managed:
-    - source: salt://lb/files/vhost_test/{{ vhost }}
+    - source: salt://lb/files/vhost_test/{{ vhost }}.conf
     - user: root
     - group: root
     - mode: 644
