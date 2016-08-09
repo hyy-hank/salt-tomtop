@@ -1,5 +1,6 @@
 include:
   - services.lb.install
+  - services.logstash.install
 
 nginx_lb_conf:
   file.managed:
@@ -101,3 +102,12 @@ nginx_lb_conf:
     - mode: 755
     - makedirs: True
 
+/etc/logstash/conf.d/shipper.conf:
+  file.managed:
+    - source: salt://lb/files/shipper.conf
+    - user: root
+    - group: root
+    - mode: 644
+    - template: jinja
+    - watch_in:
+      - service: logstash_service
