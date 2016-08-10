@@ -1,18 +1,24 @@
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+
 #api
-172.31.61.154	base.api.tomtop.com
-172.31.61.154	member.api.tomtop.com
-172.31.61.154	product.api.tomtop.com
-172.31.61.154	advert.api.tomtop.com
-172.31.61.154	ipn.api.tomtop.com
-172.31.61.154	producer.api.tomtop.com
-172.31.61.155	consumer.api.tomtop.com
-172.31.61.155	search.api.tomtop.com
-172.31.61.155	img.api.tomtop.com
-172.31.61.155	logistics.api.tomtop.com
-172.31.61.155	loyalty.api.tomtop.com
-172.31.61.155	email.api.tomtop.com
+172.31.26.81	base.api.tomtop.com
+172.31.26.81	member.api.tomtop.com
+172.31.26.81	product.api.tomtop.com
+172.31.26.81	advert.api.tomtop.com
+172.31.26.81	ipn.api.tomtop.com
+172.31.26.81	producer.api.tomtop.com
+172.31.26.81	consumer.api.tomtop.com
+172.31.26.81	search.api.tomtop.com
+172.31.26.81	img.api.tomtop.com
+172.31.26.81	logistics.api.tomtop.com
+172.31.26.81	loyalty.api.tomtop.com
+172.31.26.81	email.api.tomtop.com
+
+172.31.26.81	newbostest.tomtop-cdn.com
+172.31.26.81	cartuat.tomtop.com cartuat.chicuu.com
+172.31.26.81	test.tomtop.com
+172.31.26.81	test.chicuu.com
 
 #db
 172.31.53.127	redis01.tomtop.com
