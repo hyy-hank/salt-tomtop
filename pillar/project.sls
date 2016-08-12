@@ -65,11 +65,11 @@ camfere_project:
 {% endif %}
 
 {% if 'tooartsweb' in grains['roles'] %}
-camfere_project:
+tooarts_project:
   - tooartswww
 {% endif %}
 
 {% if 'dodocoolweb' in grains['roles'] %}
-camfere_project:
+dodocool_project:
   - dodocoolwww
 {% endif %}
