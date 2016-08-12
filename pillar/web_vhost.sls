@@ -66,26 +66,26 @@ camfere_vhost:
 {% endif %}
 
 {% if 'tooartsweb' in grains['roles'] and grains['env'] == 'prod' %}
-camfere_vhost:
+tooarts_vhost:
   - www.tooarts.com
   - m.tooarts.com
 {% elif 'tooartsweb' in grains['roles'] and grains['env'] == 'uat' %}
-camfere_vhost:
+tooarts_vhost:
   - uat.tooarts.com
   - muat.tooarts.com
 {% elif 'tooartsweb' in grains['roles'] and grains['env'] == 'test' %}
-camfere_vhost:
+tooarts_vhost:
   - test.tooarts.com
   - mtest.tooarts.com
 {% endif %}
 
 {% if 'dodocoolweb' in grains['roles'] and grains['env'] == 'prod' %}
-camfere_vhost:
+dodocool_vhost:
   - www.dodocool.com
 {% elif 'dodocoolweb' in grains['roles'] and grains['env'] == 'uat' %}
-camfere_vhost:
+dodocool_vhost:
   - uat.dodocool.com
 {% elif 'dodocoolweb' in grains['roles'] and grains['env'] == 'test' %}
-camfere_vhost:
+dodocool_vhost:
   - test.dodocool.com
 {% endif %}
