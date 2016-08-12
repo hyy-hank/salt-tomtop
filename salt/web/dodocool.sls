@@ -2,7 +2,7 @@ include:
   - services.nginx.install
   - services.php.install
 
-camfere_nginx_conf:
+dodocool_nginx_conf:
   file.managed:
     - name: /usr/local/nginx/conf/nginx.conf
     - source: salt://web/files/nginx.conf
@@ -12,7 +12,7 @@ camfere_nginx_conf:
     - watch_in:
       - service: nginx_service
 
-{% for vhost in pillar['camfere_vhost'] %}
+{% for vhost in pillar['dodocool_vhost'] %}
 /usr/local/nginx/conf/vhost/{{ vhost }}.conf:
   file.managed:
     - source: salt://web/files/{{ vhost }}.conf
@@ -26,7 +26,7 @@ camfere_nginx_conf:
       - service: nginx_service
 {% endfor %}
 
-{% for project in pillar['camfere_project'] %}
+{% for project in pillar['dodocool_project'] %}
 /data/www/{{ project  }}:
   file.directory:
     - user: www
