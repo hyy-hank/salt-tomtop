@@ -6,6 +6,22 @@ base:
     - match: grain
     - lb
 
+  'roles:api01':
+    - match: grain
+    - api01
+
+  'roles:api02':
+    - match: grain
+    - api02
+
+  'roles:cart':
+    - match: grain
+    - cart
+
+  'roles:manage':
+    - match: grain
+    - manage
+
   'roles:tomtopweb':
     - match: grain
     - web.tomtop
@@ -26,18 +42,11 @@ base:
     - match: grain
     - web.camfere
 
-  'roles:cart':
+  'roles:tooartsweb':
     - match: grain
-    - cart
+    - web.tooarts
 
-  'roles:manage':
+  'roles:dodocoolweb':
     - match: grain
-    - manage
+    - web.dodocool
 
-  'roles:api01':
-    - match: grain
-    - api01
-
-  'roles:api02':
-    - match: grain
-    - api02
