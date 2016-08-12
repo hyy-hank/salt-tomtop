@@ -31,6 +31,8 @@ static_project:
   - rcmomentstatic
   - koogeekstatic
   - camferestatic
+  - tooartsstatic
+  - dodocoolstatic
 {% endif %}
 
 {% if 'tomtopweb' in grains['roles'] %}
@@ -60,4 +62,14 @@ koogeek_project:
 camfere_project:
   - camferewww
   - camferem
+{% endif %}
+
+{% if 'tooartsweb' in grains['roles'] %}
+camfere_project:
+  - tooartswww
+{% endif %}
+
+{% if 'dodocoolweb' in grains['roles'] %}
+camfere_project:
+  - dodocoolwww
 {% endif %}
