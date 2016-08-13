@@ -1,6 +1,7 @@
 include:
   - services.nginx.install
   - services.php.install
+  - services.logstash.install
 
 rcmoment_nginx_conf:
   file.managed:
@@ -34,3 +35,13 @@ rcmoment_nginx_conf:
     - mode: 755
     - makedirs: True
 {% endfor %}
+
+/etc/logstash/conf.d/shipper-php.conf:
+  file.managed:
+    - source: salt://web/files/shipper-php.conf
+    - user: root
+    - group: root
+    - mode: 644
+    - template: jinja
+    - watch_in:
+      - service: logstash_service
