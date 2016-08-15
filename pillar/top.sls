@@ -9,6 +9,6 @@ base:
     - web_vhost
     - project
 
-  'G@roles:api* or @G@roles:manage':
+  'G@roles:api* or G@roles:manage':
     - match: compound
     - project 
