@@ -2,17 +2,17 @@ include:
   - services.lb.install
   - services.logstash.install
 
+{% if grains['env']  == 'prod' %}
 nginx_lb_conf:
   file.managed:
     - name: /usr/local/nginx/conf/nginx.conf
-    - source: salt://lb/files/nginx.conf
+    - source: salt://lb/files/vhost_prod/nginx.conf
     - user: root
     - group: root
     - mode: 644
     - watch_in:
       - service: nginx_service
 
-{% if grains['env']  == 'prod' %}
 {% for vhost in pillar['lb_vhost'] %}
 /usr/local/nginx/conf/vhost/{{ vhost }}.conf:
   file.managed:
@@ -29,6 +29,16 @@ nginx_lb_conf:
 {% endif %}
 
 {% if grains['env']  == 'uat' %}
+nginx_lb_conf:
+  file.managed:
+    - name: /usr/local/nginx/conf/nginx.conf
+    - source: salt://lb/files/vhost_uat/nginx.conf
+    - user: root
+    - group: root
+    - mode: 644
+    - watch_in:
+      - service: nginx_service
+
 {% for vhost in pillar['lb_vhost'] %}
 /usr/local/nginx/conf/vhost/{{ vhost }}.conf:
   file.managed:
@@ -45,6 +55,16 @@ nginx_lb_conf:
 {% endif %}
 
 {% if grains['env']  == 'test' %}
+nginx_lb_conf:
+  file.managed:
+    - name: /usr/local/nginx/conf/nginx.conf
+    - source: salt://lb/files/vhost_test/nginx.conf
+    - user: root
+    - group: root
+    - mode: 644
+    - watch_in:
+      - service: nginx_service
+
 {% for vhost in pillar['lb_vhost'] %}
 /usr/local/nginx/conf/vhost/{{ vhost }}.conf:
   file.managed:
