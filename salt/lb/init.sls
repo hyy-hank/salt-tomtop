@@ -102,9 +102,9 @@ nginx_lb_conf:
     - mode: 755
     - makedirs: True
 
-/etc/logstash/conf.d/shipper.conf:
+/etc/logstash/conf.d/shipper-lb.conf:
   file.managed:
-    - source: salt://lb/files/shipper.conf
+    - source: salt://lb/files/shipper-lb.conf
     - user: root
     - group: root
     - mode: 644

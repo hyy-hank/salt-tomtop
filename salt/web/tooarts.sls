@@ -1,6 +1,7 @@
 include:
   - services.nginx.install
   - services.php.install
+  - services.logstash.install
 
 tooarts_nginx_conf:
   file.managed:
@@ -38,3 +39,13 @@ tooarts_nginx_conf:
       - group
       - mode
 {% endfor %}
+
+/etc/logstash/conf.d/shipper-php.conf:
+  file.managed:
+    - source: salt://web/files/shipper-php.conf
+    - user: root
+    - group: root
+    - mode: 644
+    - template: jinja
+    - watch_in:
+      - service: logstash_service

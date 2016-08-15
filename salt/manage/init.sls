@@ -1,5 +1,6 @@
 include:
   - services.tomcat.install
+  - services.logstash.install
 
 {% for project in pillar['manage_project'] %}
 tomcat-{{ project }}:
@@ -61,3 +62,13 @@ tomcat-{{ project }}_service:
     - watch:
       - file: /usr/local/tomcat-{{ project }}/conf/server.xml
 {% endfor %}
+
+/etc/logstash/conf.d/shipper-manage.conf:
+  file.managed:
+    - source: salt://manage/files/shipper-manage.conf
+    - user: root
+    - group: root
+    - mode: 644
+    - template: jinja
+    - watch_in:
+      - service: logstash_service
