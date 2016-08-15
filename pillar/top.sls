@@ -9,6 +9,6 @@ base:
     - web_vhost
     - project
 
-  'roles:api*':
-    - match: grain
+  'G@roles:api* or G@roles:manage':
+    - match: compound
     - project 
