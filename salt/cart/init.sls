@@ -1,5 +1,6 @@
 include:
   - services.tomcat.install
+  - services.logstash.install
 
 tomcat-cart:
   cmd.run:
@@ -56,3 +57,13 @@ tomcat-cart_service:
     - restart: True
     - watch:
       - file: /usr/local/tomcat-cart/conf/server.xml
+
+/etc/logstash/conf.d/shipper-cart.conf:
+  file.managed:
+    - source: salt://cart/files/shipper-cart.conf
+    - user: root
+    - group: root
+    - mode: 644
+    - template: jinja
+    - watch_in:
+      - service: logstash_service
