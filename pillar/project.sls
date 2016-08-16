@@ -15,6 +15,7 @@ api02_project:
   - image
   - logistics
   - loyalty
+  - report
   - email
 {% endif %}
 

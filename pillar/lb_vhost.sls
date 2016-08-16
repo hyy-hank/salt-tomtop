@@ -77,6 +77,7 @@ lb_vhost:
   - img.api.tomtop.com
   - logistics.api.tomtop.com
   - loyalty.api.tomtop.com
+  - report.api.tomtop.com
   - email.api.tomtop.com
 
 
