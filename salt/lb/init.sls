@@ -122,12 +122,12 @@ nginx_lb_conf:
     - mode: 755
     - makedirs: True
 
-/etc/logstash/conf.d/shipper-lb.conf:
-  file.managed:
-    - source: salt://lb/files/shipper-lb.conf
-    - user: root
-    - group: root
-    - mode: 644
-    - template: jinja
-    - watch_in:
-      - service: logstash_service
+#/etc/logstash/conf.d/shipper-lb.conf:
+#  file.managed:
+#    - source: salt://lb/files/shipper-lb.conf
+#    - user: root
+#    - group: root
+#    - mode: 644
+#    - template: jinja
+#    - watch_in:
+#      - service: logstash_service#
