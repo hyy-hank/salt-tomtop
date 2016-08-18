@@ -1,6 +1,7 @@
 base:
   '*':
     - user
+    
   'roles:lb':
     - match: grain
     - lb_vhost
