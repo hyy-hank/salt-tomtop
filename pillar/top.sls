@@ -1,4 +1,6 @@
 base:
+  '*':
+    - user
   'roles:lb':
     - match: grain
     - lb_vhost
@@ -12,3 +14,4 @@ base:
   'G@roles:api* or G@roles:manage':
     - match: compound
     - project 
+
