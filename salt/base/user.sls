@@ -20,7 +20,6 @@ user_{{ user.username }}:
     - name: {{ user.username }}
     - shell: {{ user.shell }}
     - home: {{ user.home }}
-    - password: {{ user.password }}
     - groups: 
       - {{ user.group }}
     - createhome: True
