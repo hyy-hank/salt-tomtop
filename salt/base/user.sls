@@ -9,7 +9,7 @@
 sudoers_file:
   file.managed:
     - name: /etc/sudoers
-    - source: salt://user/sudoers
+    - source: salt://base/user/sudoers
     - user: root
     - mode: 440
 
