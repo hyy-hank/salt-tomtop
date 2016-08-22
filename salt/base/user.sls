@@ -9,7 +9,7 @@
 sudoers_file:
   file.managed:
     - name: /etc/sudoers
-    - source: salt://user/sudoers
+    - source: salt://base/files/sudoers
     - user: root
     - mode: 440
 
@@ -20,7 +20,6 @@ user_{{ user.username }}:
     - name: {{ user.username }}
     - shell: {{ user.shell }}
     - home: {{ user.home }}
-    - password: {{ user.password }}
     - groups: 
       - {{ user.group }}
     - createhome: True
