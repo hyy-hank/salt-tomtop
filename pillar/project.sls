@@ -19,6 +19,11 @@ api02_project:
   - email
 {% endif %}
 
+{% if 'api03' in grains['roles'] %}
+api03_project:
+  - app
+{% endif %}
+
 {% if 'manage' in grains['roles'] %}
 manage_project:
   - management
