@@ -3,7 +3,7 @@ CATALINA_PID="$CATALINA_BASE/tomcat.pid"
 #add java opts
 CATALINA_OPTS="-Djava.library.path=/usr/local/tomcat-native/lib"
 {% if grains['env'] == 'test' %}
-JAVA_OPTS="-server -Xms8192M -Xmx8192M -Dspring.profiles.active=test"
+JAVA_OPTS="-server -Xms1024M -Xmx1024M -Dspring.profiles.active=test"
 {% elif grains['env'] == 'uat' %}
 JAVA_OPTS="-server -Xms8192M -Xmx8192M -Dspring.profiles.active=uat"
 {% elif grains['env'] == 'prod' %}
