@@ -43,6 +43,7 @@ lb_vhost:
   - muat.camfere.com
   - uat.tooarts.com
   - uat.dodocool.com
+  - appuat.api.tomtop.com
 {% elif grains['env'] == 'test' %}
   - carttest.tomtop.com
   - newbostest.tomtop-cdn.com
@@ -65,6 +66,7 @@ lb_vhost:
   - mtest.camfere.com
   - test.tooarts.com
   - test.dodocool.com
+  - apptest.api.tomtop.com
 {% endif %}
   - base.api.tomtop.com
   - member.api.tomtop.com
