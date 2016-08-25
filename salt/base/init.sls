@@ -5,3 +5,4 @@ include:
   - base.ntpd
   - base.history
   - base.zabbix_agent
+  - base.hosts

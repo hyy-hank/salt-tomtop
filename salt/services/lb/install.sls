@@ -59,6 +59,14 @@ nginx_logs_directory:
     - mode: 755
     - makedirs: True
 
+nginx_log_cut:
+  file.managed:
+    - name: /etc/logrotate.d/nginx
+    - source: salt://services/nginx/files/nginx
+    - user: root
+    - group: root
+    - mode: 644
+
 nginx_vhost_directory:
   file.directory:
     - name: /usr/local/nginx/conf/vhost
