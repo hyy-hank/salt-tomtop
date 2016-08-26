@@ -73,6 +73,7 @@ camfere_project:
 {% if 'tooartsweb' in grains['roles'] %}
 tooarts_project:
   - tooartswww
+  - tooartsm
 {% endif %}
 
 {% if 'dodocoolweb' in grains['roles'] %}

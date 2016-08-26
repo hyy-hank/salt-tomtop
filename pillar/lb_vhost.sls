@@ -20,6 +20,7 @@ lb_vhost:
   - www.camfere.com
   - m.camfere.com
   - www.tooarts.com
+  - m.tooarts.com
   - www.dodocool.com
 {% elif grains['env'] == 'uat' %}
   - cartuat.tomtop.com
@@ -42,6 +43,7 @@ lb_vhost:
   - uat.camfere.com
   - muat.camfere.com
   - uat.tooarts.com
+  - muat.tooarts.com
   - uat.dodocool.com
   - appuat.api.tomtop.com
 {% elif grains['env'] == 'test' %}
@@ -65,6 +67,7 @@ lb_vhost:
   - test.camfere.com
   - mtest.camfere.com
   - test.tooarts.com
+  - mtest.tooarts.com
   - test.dodocool.com
   - apptest.api.tomtop.com
 {% endif %}
